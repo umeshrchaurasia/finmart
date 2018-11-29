@@ -74,7 +74,7 @@ public class BaseActivity extends AppCompatActivity {
     PopUpListener popUpListener;
     PermissionListener permissionListener;
     String[] permissionsRequired = new String[]{android.Manifest.permission.CALL_PHONE};
-
+    PrefManager prefManager;
 
     public int getAgeFromDate(String birthdate) {
 
@@ -193,13 +193,28 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        prefManager = new PrefManager(this);
+        setCustomTheme();
 
-        setTheme(R.style.AppThemeGreen);
 
         // Initialize Realm
         Realm.init(this);
         // Get a Realm instance for this thread
         realm = Realm.getDefaultInstance();
+    }
+
+    private void setCustomTheme() {
+        int theme = prefManager.getTheme();
+        switch (theme) {
+            case 0:
+                setTheme(R.style.AppTheme);
+                break;
+            case 1:
+                setTheme(R.style.AppThemeGreen);
+                break;
+            default:
+                setTheme(R.style.AppTheme);
+        }
     }
 
 
@@ -853,18 +868,21 @@ public class BaseActivity extends AppCompatActivity {
             //shareQuote();
             startActivity(new Intent(BaseActivity.this, IncomePotentialActivity.class));
         }
+
         @JavascriptInterface
         public void incomeCalculator() {
             //Get the string value to process
             //shareQuote();
             startActivity(new Intent(BaseActivity.this, IncomeCalculatorActivity.class));
         }
+
         @JavascriptInterface
         public void processComplete() {
             //Get the string value to process
             //shareQuote();
         }
     }
+
     private void settingWebview(WebView webView, String url) {
         WebSettings settings = webView.getSettings();
         settings.setJavaScriptEnabled(true);

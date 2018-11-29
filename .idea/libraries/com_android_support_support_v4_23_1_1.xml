@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="com.android.support:support-v4-23.1.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/4aeea68ad8721fdd5d1d7e6cf33b09ec/jars/libs/internal_impl-23.1.1.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/4aeea68ad8721fdd5d1d7e6cf33b09ec/res" />
-      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/4aeea68ad8721fdd5d1d7e6cf33b09ec/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/704a17f139252ba272b7a6573ac7f98f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/704a17f139252ba272b7a6573ac7f98f/res" />
+      <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.6-all/caches/transforms-1/files-1.1/support-v4-23.1.1.aar/704a17f139252ba272b7a6573ac7f98f/jars/libs/internal_impl-23.1.1.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://D:/Android/User/Sdk/extras/android/m2repository/com/android/support/support-v4/23.1.1/support-v4-23.1.1-javadoc.jar!/" />

@@ -61,12 +61,27 @@ public class PrefManager {
 
     private static final String CONTACT_COUNT = "contact_count";
 
+    public static final String APP_THEME = "APP_THEME";
 
     public PrefManager(Context context) {
         this._context = context;
         pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
         editor = pref.edit();
     }
+
+    //region theme
+
+    public boolean setTheme(int theme) {
+        editor.putInt(APP_THEME, theme);
+        return editor.commit();
+    }
+
+    public int getTheme() {
+        return pref.getInt(APP_THEME, 0);
+    }
+
+    //endregion
+
 
     //region vehicle detail
 
@@ -332,7 +347,7 @@ public class PrefManager {
     }
 
     public boolean getContactListCount() {
-        return pref.getBoolean(CONTACT_COUNT,false );
+        return pref.getBoolean(CONTACT_COUNT, false);
     }
     //endregion
 
@@ -428,7 +443,7 @@ public class PrefManager {
         editor.remove(POPUP_ID);
     }
 
-//Notification Enable
+    //Notification Enable
     public boolean updateNotificationsetting(String notification) {
         pref.edit().remove(NotificationTypeEnable).commit();
         return pref.edit().putString(NotificationTypeEnable, notification).commit();
