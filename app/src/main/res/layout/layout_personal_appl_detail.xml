@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="Applicant Name">
+
+                    <EditText
+                        android:id="@+id/etNameOfApplicant"
+                        android:maxLines="1"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                        android:drawableRight="@drawable/vector_person"
+                        android:inputType="textCapWords"
+                        style="@style/Style.edittext" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewStyle.Medium"
+                        android:gravity="center"
+                        android:text="Gender" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/txtrbimgMale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="50"
+                            android:background="@drawable/customeborder_blue"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="MALE"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+
+                            android:id="@+id/txtrbimgFemale"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="50"
+                            android:background="@drawable/customeborder"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="FEMALE"
+                            android:textColor="@color/description_text" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="Date Of Birth">
+
+                    <EditText
+                        android:id="@+id/et_DOB"
+                        style="@style/Style.edittext"
+                        android:drawableRight="@drawable/vector_date"
+                        android:focusable="false" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewStyle.Medium"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:text="Occupation" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/txtSalaried"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="50"
+                            android:background="@drawable/customeborder_blue"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="SALARIED"
+                            android:textColor="@color/colorPrimary" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="Monthly Income">
+
+
+                    <EditText
+                        android:id="@+id/etMonthlyInc"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="9"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="Existing EMI(If Any)">
+
+                    <EditText
+                        android:id="@+id/etEMI"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="9" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="PAN">
+
+                    <EditText
+                        android:id="@+id/etPAN"
+                        style="@style/Style.edittext"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="Mobile No">
+
+                    <EditText
+                        android:id="@+id/etcontact"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="Required Loan Amount">
+
+                    <EditText
+                        android:id="@+id/etCostOfProp"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+
+                style="@style/TextViewStyle.Large"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text=" LOAN TENURE"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/txtDispalayMinTenureYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="1 Yr"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+                <TextView
+                    android:id="@+id/txtDispalayMaxTenureYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="5 Yr"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <TextView
+                    android:id="@+id/etTenureInYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/blue_background"
+                    android:text="1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+            <SeekBar
+                android:id="@+id/sbTenure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:max="4"
+
+                android:progress="1"
+                android:progressDrawable="@drawable/seekbar_style"
+                android:splitTrack="false"
+                android:maxHeight="8dp"
+                android:minHeight="8dp"
+                android:thumb="@drawable/custom_thumb" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="68"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewStyle.Medium"
+                        android:gravity="center"
+                        android:text="Status" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/txtrbimgsingle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="31"
+                            android:background="@drawable/customeborder_blue"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="SINGLE"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+
+                            android:id="@+id/txtrbimgmarried"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="40"
+                            android:background="@drawable/customeborder"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="MARRIED"
+                            android:textColor="@color/description_text" />
+
+                        <TextView
+
+                            android:id="@+id/txtrbimgother"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="29"
+                            android:background="@drawable/customeborder"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="OTHER"
+
+                            android:textColor="@color/description_text" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:padding="5dp"  android:gravity="center_horizontal"
+                    android:layout_weight="32"
+                    android:hint="Pincode">
+
+                    <EditText
+                        android:id="@+id/etPincode"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="6"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxLength="6" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/llcity"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="City">
+
+                    <EditText
+                        android:id="@+id/etCity"
+                        style="@style/Style.edittext"
+                    android:text=""
+                        android:enabled="false"
+                       />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="State">
+                    <EditText
+                        android:enabled="false"
+                        android:id="@+id/etState"
+                        style="@style/Style.edittext"
+                        android:text=""
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/llemail"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="Email Address">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        style="@style/Style.edittext"
+                        android:text=""
+
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="Address">
+
+                    <EditText
+                        android:id="@+id/etaddress"
+                        style="@style/Style.edittext"
+
+
+                        android:layout_height="32dp"
+                        android:text="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextViewStyle.Medium"
+                        android:gravity="center"
+                        android:text="Address Type" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/txtrbimgPersent"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:layout_weight="25"
+                            android:background="@drawable/customeborder_blue"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="PRESENT"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+
+                            android:id="@+id/txtrbimgPermanent"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="29"
+                            android:background="@drawable/customeborder"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="PERMANENT"
+                            android:textColor="@color/description_text" />
+
+                        <TextView
+
+                            android:id="@+id/txtrbimgOfficer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="23"
+                            android:background="@drawable/customeborder"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="OFFICE"
+
+                            android:textColor="@color/description_text" />
+                        <TextView
+                            android:id="@+id/txtrbimgOther_addr"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="23"
+                            android:background="@drawable/customeborder"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="OTHER"
+                            android:textColor="@color/description_text" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

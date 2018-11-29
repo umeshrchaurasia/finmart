@@ -1,0 +1,609 @@
+<resources>
+    <!--<string name="app_name">MagicFinmart</string>-->
+    <string name="title_activity_home">Home</string>
+    <string name="signup">Not a Member? <b><u>Sign up now!</u></b></string>
+    <string name="threedots">&#8942;</string>
+
+    <string name="file_provider_authority" translatable="false">com.datacomp.magicfinmart.fileprovider</string>
+
+    <string name="Emp_detail">Employment &amp; Income Details</string>
+
+    <string name="RM_Calling">Do you want to call/mail to your\nManager: </string>
+
+    <string name="Support_Calling">Do you want to call Support Team. </string>
+
+    <string name="materail_count">new Images are available for downloading.\nContinue???</string>
+    <string name="fetching_msg">Please Wait... fetching quotes</string>
+    <string-array name="ncb_percent">
+        <item>0</item>
+        <item>20</item>
+        <item>25</item>
+        <item>35</item>
+        <item>45</item>
+        <item>50</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_private_car_detail">Motor Insurance</string>
+    <string name="title_activity_register">REGISTER AS ASSOCIATE</string>
+    <string name="title_myaccount">MY ACCOUNT</string>
+    <string name="title_pospenrollment">ENROLL FOR IRDA POSP</string>
+    <string name="title_activity_add_new_quote">Add Quote</string>
+    <string name="title_activity_quote">Quotes</string>
+    <string name="title_activity_common_web_view">Web View</string>
+    <string name="title_activity_premium_break_up">Premium Details</string>
+    <string name="title_activity_personal_loan_detail">PERSONAL LOAN</string>
+
+    <array name="IncomeSource">
+        <item>Salaried</item>
+        <item>Self-Employed</item>
+    </array>
+    <array name="RelationType">
+        <item>SPOUSE</item>
+        <item>FATHER</item>
+        <item>MOTHER</item>
+        <item>SON</item>
+        <item>DAUGHTER</item>
+        <item>BROTHER</item>
+        <item>SISTER</item>
+
+    </array>
+    <string name="title_activity_home_loan_detail">HOME LOAN</string>
+    <string name="title_activity_home_loan_quote">HOME LOAN</string>
+    <string name="title_activity_lap_loan_detail">LOAN AGAINST PROPERTY</string>
+    <string name="title_activity_lap_loan_quote">LOAN AGAINST PROPERTY</string>
+    <string name="title_activity_personal_loan_apply">PERSONAL LOAN</string>
+    <string name="title_activity_plmain">PERSONAL LOAN</string>
+    <string name="title_activity_home_loan_apply">HOME LOAN</string>
+    <string name="title_activity_input_quote_bottm">Motor Insurance</string>
+    <string name="title_activity_hlmain">HOME LOAN</string>
+    <string name="title_activity_balance_transfer_detail">BALANCE TRANSFER</string>
+    <string name="title_activity_blmain">BALANCE TRANSFER</string>
+    <string name="title_activity_personal_loan_apply_web_view">PERSONAL LOAN</string>
+    <string name="title_activity_home_loan_apply_web_view">HOME LOAN</string>
+    <string name="title_activity_lapmain">LOAN AGAINST PROPERTY</string>
+    <string name="title_activity_lapapply">LOAN AGAINST PROPERTY</string>
+    <string name="title_activity_lapapply_web_view">LOAN AGAINST PROPERTY</string>
+    <string name="title_activity_two_wheeler_quote_app">Two Wheeler</string>
+    <string name="title_activity_bike_add_quote">Two Wheeler</string>
+    <string name="openDrawer">Open navigation drawer</string>
+    <string name="closeDrawer">Close navigation drawer</string>
+    <!--health-->
+    <!-- Modify Car-->
+    <string-array name="pa_cover_car">
+        <item>0</item>
+        <item>50000</item>
+        <item>100000</item>
+        <item>150000</item>
+        <item>200000</item>
+    </string-array>
+
+    <string-array name="pa_cover_bike">
+        <item>0</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>40000</item>
+        <item>50000</item>
+        <item>100000</item>
+        <item>200000</item>
+    </string-array>
+    <string-array name="voluntary_car">
+        <item>0</item>
+        <item>2500</item>
+        <item>5000</item>
+        <item>7500</item>
+        <item>15000</item>
+    </string-array>
+
+    <string-array name="voluntary_bike">
+        <item>0</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>3000</item>
+    </string-array>
+    <string name="title_activity_health_member_details_dialog">" "</string>
+
+
+    <!--Health relationship-->
+    <string-array name="health_relationship">
+        <item>Relationship</item>
+        <item>Self</item>
+        <item>Spouse</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Child1</item>
+        <item>Child2</item>
+        <item>Child3</item>
+        <item>Child4</item>
+
+    </string-array>
+
+    <string-array name="health_family_relationship">
+        <item>Relationship</item>
+        <item>Self</item>
+        <item>Spouse</item>
+        <item>Child1</item>
+        <item>Child2</item>
+        <item>Child3</item>
+        <item>Child4</item>
+
+    </string-array>
+
+    <string-array name="health_parent_relationship">
+        <item>Relationship</item>
+        <item>Father</item>
+        <item>Mother</item>
+
+
+    </string-array>
+
+    <string-array name="icici_qualification">
+        <item>Highest Education Qualification</item>
+        <item>Under Graduate</item>
+        <item>Graduate/Diploma</item>
+        <item>Post Graduate</item>
+        <item>Professional</item>
+    </string-array>
+
+    <string-array name="icici_relationship">
+        <item>ICICI Bank Relationship</item>
+        <item>Salary</item>
+        <item>Saving</item>
+        <item>Loan</item>
+        <item>Non Relationship</item>
+    </string-array>
+
+    <string-array name="icici_residence_type">
+        <item>Residence TYPE</item>
+        <item>Owned by self/spouse</item>
+        <item>Owned by parents/siblings</item>
+        <item>Rented with Family</item>
+        <item>Rented with Friends</item>
+        <item>Rented staying alone</item>
+        <item>Paying guest/Hostel</item>
+        <item>Company Provided</item>
+    </string-array>
+
+    <string-array name="icici_type_of_company">
+        <item>Type Of Company</item>
+        <item>Central Government</item>
+        <item>MNC</item>
+        <item>Partnership</item>
+        <item>Private Limited</item>
+        <item>Proprietorship</item>
+        <item>PSU</item>
+        <item>Public Limited</item>
+        <item>State Government</item>
+    </string-array>
+
+    <string-array name="Supplimentary_card">
+        <item>I want to apply for supplimentary card</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="Mailing_Address">
+        <item>Preferred mailing address</item>
+        <item>Office</item>
+        <item>Residence</item>
+    </string-array>
+
+    <string-array name="icici_salary_account_opened">
+        <item>Salary Account Opened</item>
+        <item>&lt; 2 MONTHS</item>
+        <item>&gt; 2 MONTHS</item>
+
+    </string-array>
+
+    <string-array name="NoOfDependents">
+        <item>No of Dependents</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5+</item>
+
+    </string-array>
+
+    <string-array name="title">
+        <item>Mr</item>
+        <item>Ms</item>
+        <item>Mrs</item>
+        <item>Dr</item>
+        <item>Other</item>
+
+    </string-array>
+
+    <string-array name="title_loan">
+        <item>MR.</item>
+        <item>MRS.</item>
+        <item>MS.</item>
+
+    </string-array>
+
+    <string-array name="ownership">
+        <item>Select</item>
+        <item>Rent House</item>
+        <item>Self Owned</item>
+        <item>Parental</item>
+        <item>Co-Provided</item>
+
+    </string-array>
+
+    <string-array name="organization">
+        <item>Select</item>
+        <item>Multinational</item>
+        <item>Public Ltd.</item>
+        <item>Govt/Semi Govt.Ent.</item>
+        <item>Pvt Ltd.</item>
+        <item>Partnership</item>
+        <item>Proprietorship</item>
+        <item>Others</item>
+
+    </string-array>
+
+
+    <string-array name="business">
+        <item>Select</item>
+        <item>Services</item>
+        <item>Trading</item>
+        <item>Manufacturing</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="quicklead_product">
+        <item>Product</item>
+        <item>Business Loan</item>
+        <item>Car Loan</item>
+        <item>Car Refinance</item>
+        <item>Home Loan BT</item>
+        <item>Lap BT</item>
+        <item>LRD</item>
+        <item>Merchant Business</item>
+        <!--<item>LAP</item>-->
+        <!--<item>Personal Loan</item>-->
+        <!--<item>Credit Card</item>-->
+        <item>Used Car Loan</item>
+        <item>Working Capital</item>
+
+        <!--<item>Home Loan</item>-->
+        <!--<item>Term Loan</item>-->
+
+    </string-array>
+
+    <string name="title_activity_health_check_up_plans">HEALTH CHECK UP PLANS</string>
+    <string name="title_activity_eula">Agreement</string>
+    <string name="title_activity_knowledge_guru">KNOWLEDGE GURU</string>
+    <string name="knowledge_guru_header">WELCOME TO KNOWLEDGE BANK \nFOR ALL THAT YOU NEED</string>
+    <string name="title_activity_knowledge_guru_webview">Knowledge Guru</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="title_activity_under_construction">MAGIC FINMART</string>
+    <string name="title_activity_whats_new">WHAT\'S NEW</string>
+    <string name="title_activity_help_feed_back">HELP &amp; FEEDBACK</string>
+    <string name="title_activity_contact_us">CONTACT US</string>
+    <string name="title_activity_about_us">ABOUT US</string>
+    <string name="title_activity_sales_material">"Sales Material "</string>
+    <string name="title_activity_credit_card">"Credit Card"</string>
+    <string name="title_activity_rblcredit_apply">RBL Credit card</string>
+    <string name="title_activity_applied_credit_list">Credit Card</string>
+    <string name="title_activity_raise_ticket">RAISE A TICKET</string>
+    <string name="title_activity_add_ticket">RAISE A TICKET</string>
+    <!--<string name="title_activity_main">ICICI Credit Card</string>-->
+    <string name="title_activity_share_quote_activity">Share</string>
+
+
+    <string name="icici_terms_con">I hereby confirm that I have read and understood the Rupeeboss Terms and Conditions applicable to this service and that all the details furnished by me above are true and correct. I further provide consent to Rupeeboss and its affiliates to contact me with reference to financial products and this consent shall override any registration with DNC/NDNC.</string>
+    <string name="express_rbl_terms_con">I authorize RBL Bank to contact me. This will override registry on DND / NDNC *</string>
+    <string name="title_activity_quick_lead">Quick Lead</string>
+    <string name="title_activity_balance_transfer_loan_apply">Balance Transfer Loan Apply Activity</string>
+
+    <string name="title_activity_health_compare">Compare</string>
+    <string name="title_activity_balance_transfer_personal_apply">
+      Personal Loan - Balance Transfer  Activity
+    </string>
+
+    <!--region inspect-->
+    <!-- <string name="title_activity_home">HomeActivity</string>-->
+    <string name="title_activity_term_quote_application">Life Insurance</string>
+    <string name="title_activity_term_selection">LIFE INSURANCE</string>
+    <string name="title_activity_term_icici">ICICI PRUDENTIAL</string>
+
+
+    <!-- region posp-->
+    <string name="forgot_password"><u><i>Forgot Password?</i></u></string>
+    <!-- <string name="app_name">POSP Training</string>-->
+    <!-- <string name="action_settings">Settings</string>-->
+    <!--<string name="title_activity_login">Login</string>-->
+    <!--<string name="title_activity_register">Register</string>-->
+
+    <!--<string name="title_activity_about_us">About</string>-->
+    <!--<string name="title_activity_home">Home</string>-->
+    <string name="title_activity_bank_loan_list">Bank Loan</string>
+
+
+    <!--Term icici-->
+    <string-array name="icici_options">
+        <item>LIFE</item>
+        <item>LIFE PLUS</item>
+        <item>LIFE AND HEALTH</item>
+        <item>ALL IN ONE</item>
+    </string-array>
+
+    <string-array name="icici_premium_frequency">
+        <item>YEARLY</item>
+        <item>HALF YEARLY</item>
+        <item>MONTHLY</item>
+    </string-array>
+
+    <string-array name="icici_payment_term">
+        <item>REGULAR PAY</item>
+        <item>SINGLE PAY</item>
+        <item>LIMITED PAY</item>
+        <item>WHOLE LIFE</item>
+    </string-array>
+
+
+    <string-array name="icici_premium_payment_whole_life">
+        <item>PAY TILL AGE 99</item>
+        <item>PAY TILL AGE 60</item>
+        <item>10 PAY</item>
+    </string-array>
+
+    <string-array name="icici_premium_payment_limited_pay">
+        <item>PAY TILL AGE 60</item>
+        <item>10 PAY</item>
+        <item>7 PAY</item>
+        <item>5 PAY</item>
+    </string-array>
+
+
+    <!--Term hdfc-->
+    <string-array name="hdfc_options">
+        <item>LIFE</item>
+        <item>3D LIFE</item>
+        <item>LIFE LONG PROTECTION</item>
+        <item>3D LIFE LONG PROTECTION</item>
+        <item>EXTRA LIFE</item>
+        <item>EXTRA LIFE INCOME</item>
+        <item>INCOME OPTION</item>
+        <item>INCOME REPLACEMENT</item>
+        <item>RETURN OF PREMIUM</item>
+    </string-array>
+
+    <string-array name="hdfc_premium_frequency">
+        <item>YEARLY</item>
+        <item>HALF YEARLY</item>
+        <item>QUARTERLY</item>
+        <item>MONTHLY</item>
+        <item>SINGLE</item>
+    </string-array>
+
+
+    <string name="title_activity_compare_ti_activity">COMPARE TERM INSURANCE</string>
+
+    <string-array name="educationList">
+        <item>Under Graduate</item>
+        <item>Professional</item>
+        <item>Graduate/Diploma</item>
+        <item>Post Graduate</item>
+    </string-array>
+
+    <string name="title_activity_icici_term">ICICI PRUDENTIAL</string>
+    <string name="title_activity_hdfc_term">HDFC PERSONAL LOAN</string>
+    <string name="title_activity_kotak_term">KOTAK PERSONAL LOAN</string>
+    <string name="skin_walkthrogh">Already have an account? <b>Login</b></string>
+    <string name="sell_everything_digitally">Sell everything <b>DIGITALLY!!</b></string>
+    <string name="welcome_slide_1_text">India’s First And Most Comprehensive Business Enabling Platform For Financial Advisors</string>
+
+    <string-array name="ExistingCustomerKotakPL">
+        <item>Are You Existing Customer</item>
+        <item>Yes</item>
+        <item>No</item>
+
+    </string-array>
+
+    <string-array name="ExistingCustomerTypeKotakPL">
+        <item>Existing Customer Type Master</item>
+        <item>Bank</item>
+        <item>Loan</item>
+
+    </string-array>
+    <string-array name="QualificationKotakPL">
+        <item>Qualification</item>
+        <item>Post Graduate</item>
+        <item>Graduate</item>
+        <item>Professional</item>
+        <item>Under Graduate</item>
+        <item>Vocational</item>
+    </string-array>
+
+    <string-array name="EmploymentTypeKotakPL">
+        <item>Employment Type</item>
+        <item>Salaried</item>
+
+    </string-array>
+
+    <string-array name="PreferredMailingAddressKotakPL">
+        <item>Preferred Mailing Address</item>
+        <item>Residence Address</item>
+        <item>Office Address</item>
+
+    </string-array>
+
+    <string-array name="RequestedLoanTenureKotakPL">
+        <item>Requested Loan Tenure </item>
+        <item>12 Months</item>
+        <item>24 Months</item>
+        <item>36 Months</item>
+        <item>48 Months</item>
+        <item>60 Months</item>
+    </string-array>
+
+    <string-array name="RelationshipWithCoAppKotakPL">
+        <item>Relationship With Co-applicant</item>
+        <item>Spouse</item>
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Brother</item>
+        <item>Son</item>
+        <item>Daughter</item>
+    </string-array>
+
+    <string-array name="exp_organization">
+        <item>Organization Category</item>
+        <item>Public Ltd</item>
+        <item>Private Ltd</item>
+        <item>MNC</item>
+        <item>Central/State Govt</item>
+        <item>Proprietorship</item>
+        <item>LLP</item>
+        <item>Partnership Firm</item>
+        <item>Others Including Society/Trust/AOP</item>
+    </string-array>
+    <string-array name="exp_employment_salaried">
+        <item>Select Employment &amp; Mode OF Credit</item>
+        <item>Salaried: Account Transfer</item>
+        <item>Salaried: By Cheque</item>
+        <!--<item>Salaried: By Cash</item>-->
+        <!--<item>Self Employed</item>-->
+        <!--<item>Others</item>-->
+
+    </string-array>
+    <string-array name="exp_residence_type">
+        <item>Residence Type</item>
+        <item>Owned By Self-Spouse</item>
+        <item>Owned By Parents/Sibling</item>
+        <item>Owned By Relative</item>
+        <item>Rented With Family</item>
+        <item>Rented With Friends</item>
+        <item>Rented- Staying Alone</item>
+        <item>Hostel</item>
+        <item>Company Lease</item>
+
+        <item>Resale Property</item>
+        <item>For Construction</item>
+        <item>Property Identified - Under Construction</item>
+        <item>LAP</item>
+    </string-array>
+    <string-array name="exp_qualification">
+        <item>Qualification</item>
+        <item>Under Graduate</item>
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+        <item>Professional</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="exp_tenure">
+        <item>Tenure</item>
+        <item>12 months</item>
+        <item>24 months</item>
+        <item>36 months</item>
+        <item>48 months</item>
+        <item>60 months</item>
+    </string-array>
+    <string name="title_activity_health_check_up_list">HEALTH CHECK UP PLANS</string>
+    <string name="title_activity_early_salary">Early Salary</string>
+
+    <string-array name="referal_array">
+        <item>SELF</item>
+        <item>DATACOMP </item>
+    </string-array>
+    <string-array name="CityEarlySal">
+        <item>Select City</item>
+        <item>Mumbai</item>
+        <item>Thane</item>
+        <item>Navi-Mumbai</item>
+        <item>Delhi</item>
+        <item>Noida</item>
+        <item>Gurgaon</item>
+        <item>Gaziabad</item>
+        <item>Faridabad</item>
+        <item>Pune</item>
+        <item>PMPC</item>
+        <item>Hyderabad</item>
+        <item>Secunderabad</item>
+        <item>Bangalore</item>
+        <item>Gandhinagar</item>
+        <item>Jaipur</item>
+        <item>Chennai</item>
+    </string-array>
+    <string name="mps_popup_text">Congratulations and welcome to the Magic-Finmart Family. As our privileged associate, you are eligible to an exclusive Magic Platinum Subscription (MPS) for </string>
+    <string name="know_more_mps_desc">Magic Platinum Subscription (MPS) is an exclusive offer from Datatcomp, available to Finmart Business Associates only. In this subscrition you pay ₹
+        </string>
+    <string name="know_more_mps_desc_2"> to use Datacomp\'s following four premium applications FREE:</string>
+    <string name="title_activity_lead_info_popup">Lead Details</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_pospuser">Add POSP</string>
+    <string-array name="motor_subtype_new">
+        <item>T.P. Only (3 Yrs)</item>
+        <item>Comprehensive (1 Yr) + T.P. (2 Yrs)</item>
+        <item>Comprehensive Plan (3 Yrs)</item>
+    </string-array>
+    <string-array name="motor_subtype_renew">
+        <item>T.P. Only (1 Yr)</item>
+        <item>Comprehensive Plan (1 Yr)</item>
+    </string-array>
+
+    <string-array name="bike_subtype_renew">
+        <item>T.P. Only (1 Yr)</item>
+        <item>Comprehensive Plan (1 Yr)</item>
+    </string-array>
+    <string-array name="bike_subtype_new">
+        <item>T.P. Only (5 Yrs)</item>
+        <item>Comprehensive (1 Yr) + T.P. (4 Yrs)</item>
+        <item>Comprehensive Plan (5 Yrs)</item>
+    </string-array>
+
+    <string name="title_activity_notification_sms">NOTIFICATION SMS</string>
+    <string name="title_activity_generate_lead">GENERATE LEAD</string>
+    <string name="title_activity_income_potential">INCOME POTENTIAl</string>
+    <string name="title_activity_nav_transactionhistory">TRANSACTION HISTORY</string>
+    <string name="title_activity_contact_lead">CONTACT LEAD</string>
+    <string name="title_activity_scan_vehicle">SCAN VEHICLE</string>
+    <string name="title_activity_vehicle_scan">SCAN VEHICLE</string>
+    <string name="title_activity_offline_quotes_list">OFFLINE QUOTES</string>
+    <string name="title_activity_add_offline_quotes">ADD OFFLINE QUOTES</string>
+    <string name="Finmart_underline"><u>Know Your Magic Finmart</u>.</string>
+    <string name="title_activity_messagecenteractivity">Message Center</string>
+    <string name="txtSyncContacts1"><b><big>Sync Contacts:</big></b></string>
+    <string name="txtSyncContacts">
+        <b><u>What is this Sync Contacts Feature:</u></b>
+        \n
+        At Magic Finmart we are committed to enabling your business. Sync contacts is a feature that enables you to generate leads by marrying your contacts with our data base. This is currently being rolled out for generation of Motor insurance leads but will be available across other products in the future.
+ \n \n<b><u>How will it help me:</u></b>
+         \n
+
+We will use the phone number and sync it with our database. Once we find a match you will be able to get access to the same, you will come to know the make, model, sub model and date of expiry of your contact’s vehicle. This is then converted into a lead for you.
+         \n  \n<b><u>How does this work:</u></b>
+         \n
+Once you give your consent the application syncs the contacts in your phone book and checks our database for any motor vehicle the customer may have. This is then converted into a lead and will reside in the lead module in your back end panel. You can see the leads for every month 6 weeks prior to their expiry date.
+         \n  \n<b><u>How will I know if my leads have been created:</u></b>
+         \n
+
+Once the contact sync is complete you will get an update with the number of matches found in our database. The same will be made available to you in your backend panel. Currently it takes upto 72 hours for the data to be synced after you have given your permission.
+         \n  \n<b><u>How do I know if my data is safe:</u></b>
+         \n
+At Magic Finmart it is our constant endeavour to enable your business and we believe by opening our databases and giving you access to the same we will be able to help your business grow. So if you are sharing your contact with us we are also sharing the data of our customers with you which has been accumulated by us over the last several years. It is a win-win for both of us.
+
+         \n  \n<b><u>How do I know you will not try to reach out to the customer directly:</u></b>
+         \n
+        The customer is already in our database and we have access to them. We do not need your contact to reach out to them. We are enabling you by giving you access to the information we have. In a competitive market scenario multiple people are trying to sell to the same customer. The customer buys from you for a variety of reasons. The sale is yours if you are able to close it.
+  \n  \n<b><u>General Terms &amp; Conditions:</u></b>
+        \n
+        <ul><li>This service is offered in good faith and subject to a fair use policy</li>\n
+            <li>We will enable this for all customers who have paid our onboarding fee</li>\n<li>
+            The system is configured to monitor the number of leads generated to the conversion done from those leads. If there are no conversions we can disable access to this feature.
+            </li>\n<li>
+We presume that this feature will be used only for contacts where the customer has a relationship and will not be used to generate data from our database. Any unfair use will also lead to disabling of the feature.
+            </li></ul>
+    </string>
+</resources>

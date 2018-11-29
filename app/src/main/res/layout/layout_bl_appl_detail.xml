@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtInputSummry"
+                android:background="@color/white"
+                android:text="SELECT LOAN TYPE"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/black"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+
+                style="@style/TextViewStyle.Large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/lightGrey" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rgloantype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@+id/rbimghl"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbimghl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HOME LOAN" />
+
+                    <RadioButton
+                        android:id="@+id/rbimgpl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PERSONAL LOAN" />
+
+                    <RadioButton
+                        android:id="@+id/rbimglap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LAP" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:background="@color/lightGrey" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:hint="Name Of Applicant">
+
+            <EditText
+                android:id="@+id/etNameOfApplicant"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:drawableRight="@drawable/vector_person"
+                android:maxLines="1"
+                android:inputType="textCapWords"
+                style="@style/Style.edittext" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hint="Mobile No">
+
+            <EditText
+                android:id="@+id/etcontact"
+                style="@style/Style.edittext"
+                android:drawableRight="@drawable/vector_mobile"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:ems="10"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:hint="Outstanding Amount">
+
+
+
+            <EditText
+                android:id="@+id/etOutstanding"
+                style="@style/Style.edittext"
+                android:digits="0123456789"
+                android:ems="10"
+
+                android:inputType="number"
+                android:maxLength="9" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hint="Curr. Int Rate">
+
+            <EditText
+                android:id="@+id/etCurrInc"
+                style="@style/Style.edittext"
+                android:ems="10"
+
+                android:maxLength="5"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+
+            android:layout_weight="50"
+            android:hint="Rem. Loan Tenure (yrs)">
+
+
+            <EditText
+                android:id="@+id/ettenureyrs"
+                style="@style/Style.edittext"
+                android:ems="10"
+
+                android:maxLength="2"
+                android:digits="0123456789"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

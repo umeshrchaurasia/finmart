@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:scrollbars="vertical"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvInputDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/borderthealthcheckup"
+                app:cardElevation="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="85"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:visibility="visible"
+                            android:weightSum="5">
+
+                            <TextView
+                                android:id="@+id/tvSum"
+                                style="@style/TextViewStyle.Small"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/tvAge"
+                                style="@style/TextViewStyle.Small"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:id="@+id/tvCrn"
+                                style="@style/TextViewStyle.Small"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:gravity="right" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:visibility="visible"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/tvPolicyTerm"
+                                style="@style/TextViewStyle.Small"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:gravity="left" />
+
+                            <TextView
+                                android:id="@+id/tvGender"
+                                style="@style/TextViewStyle.Small"
+                                android:layout_width="0dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:gravity="right" />
+
+                            <TextView
+                                android:id="@+id/tvSmoker"
+                                style="@style/TextViewStyle.Small"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:textColor="@color/header_dark_text"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/ivEdit"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="15"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/edit_icon" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvTerm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/filter"
+                android:layout_below="@+id/webViewLoader"
+                android:layout_marginTop="8dp"
+                android:nestedScrollingEnabled="false">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <include
+                android:id="@+id/layoutCompare"
+                layout="@layout/content_term_header" />
+
+            <!--Compare UI-->
+            <LinearLayout
+                android:id="@+id/llCompareAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Pin Code">
+
+                        <EditText
+                            android:id="@+id/etPincode"
+                            style="@style/Style.edittext"
+                            android:inputType="number"
+                            android:maxLength="6" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Sum Assured">
+
+                        <EditText
+                            android:id="@+id/etSumAssured"
+                            style="@style/Style.edittext"
+                            android:inputType="number"
+                            android:maxLength="12"
+                            android:text="10000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="Policy Term"
+                            android:textColor="@color/blue" />
+
+                        <Spinner
+                            android:id="@+id/spPolicyTerm"
+                            style="@style/SpinnerStyle.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:dropDownWidth="250dp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/TextInputLayoutStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Fuel">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="Premium Term"
+                            android:textColor="@color/blue" />
+
+                        <Spinner
+                            android:id="@+id/spPremTerm"
+                            style="@style/SpinnerStyle.Underlined"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:dropDownWidth="250dp" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+
+        android:id="@+id/btnGetQuote"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back To Quote" />
+
+</LinearLayout>

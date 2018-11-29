@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Health Insurance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            font-size: 13px;
+        }
+
+        .blu-heading {
+            padding: 10px;
+            border: 1px solid #4d62b5;
+            color: #4d62b5;
+            font-size: 16px;
+        }
+
+        .red-txt {
+            color: #b60d2a;
+        }
+
+        .col-md-12 {
+            padding: 0px;
+        }
+
+        .tbl2 td {
+            text-align: left;
+        }
+
+        .tbl2 p {
+            color: #999;
+            font-size: 12px;
+        }
+
+        .box-shadow {
+            box-shadow: 1px 1px 3px 0px #ccc;
+        }
+
+        .amount {
+            background: #f95f67;
+            padding: 5px 15px;
+            margin: 4px;
+            font-size: 16px;
+            color: #fff;
+            display: block;
+            text-align: center;
+        }
+
+        .center {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .brd-left {
+            border-right: 1px solid #eee !important;
+        }
+
+        .bg-gray {
+            background: #ddd;
+        }
+
+        .glyphicon {
+            font-weight: normal;
+            font-size: 10px;
+            color: #666;
+            margin-right: 4px;
+        }
+
+        ul li {
+            margin: 2px;
+            padding: 4px !important;
+        }
+
+        .table > tbody > tr > td {
+            padding: 6px;
+        }
+        .point {width:10px;height:10px;border-radius:50%;background:#f73567;position:relative;display: -webkit-inline-box;margin-right: 10px;}
+
+
+.red-txt {
+            color: #b60d2a;
+        }
+  .blue-txt {
+            color: #4FB4E9;font-size:19px;
+        }
+.posp-txt {
+            font-size:14px;
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="col-md-12">
+        <br>
+        <p>Dear <b class="red-txt" id="name"></b>,</p>
+        <p>Please find below Your Health Insurance quotations.</p>
+    </div>
+
+
+    <div class="col-md-12" id="divHealth">
+        <div class="table-responsive box-shadow">
+            <table class="table table-bordered tbl2">
+                <tbody>
+                <tr>
+                    <td><img src="img/reliance_logo.png" class="img-responsive center"/></td>
+                    <td><p>SUM ASSURED</p><h5><b>₹ XXXXX</b></h5></td>
+                    <td><p>DEDUCT DLE</p><h5><b>₹ XXXXX</b></h5></td>
+                </tr>
+                <tr>
+                    <td><p>CARE FLOATER</p><h5><b>XXXXX </b></h5></td>
+                    <td colspan="2"><p class="text-center" style="color:#f95f67">PREMIUM</p> <a href="#" class="amount">₹
+                        XXXXX</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <h4>POLICY BENEFITS</h4>
+        <p><b id="lblPlanName"></b> is a perfect family plan that shields you from all
+            medical
+            expenses and gives you protection
+        </p>
+        <div  id="divBeneFits">
+            <table class="table table-striped">
+                <tr>
+                    <td><b>Room Rent Limit</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>No Limit</td>
+                </tr>
+
+                <tr>
+                    <td><b>ICU Daily Rent Limit</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>No Limit</td>
+                </tr>
+
+                <tr>
+                    <td><b>Per-Hospitalization Expenses</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>60 Days</td>
+                </tr>
+
+                <tr>
+                    <td><b>Post Hospitalization Expenses</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>90 Days</td>
+                </tr>
+
+                <tr>
+                    <td><b>Minimum Hospitalization Period</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>24 Hrs</td>
+                </tr>
+
+                <tr>
+                    <td><b>Day care Procedure Coverage</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>Covered</td>
+                </tr>
+
+                <tr>
+                    <td><b>Additional Cover for Critical illness</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>Automatic Restoration of Sum Insured</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>Per-Existing Disease / illness Coverage</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>Waiting Period for New Policy</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>30 Days</td>
+                </tr>
+
+                <tr>
+                    <td><b>Co-Payment</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>Medical Screening</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>Free Health Checkup</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>Covered</td>
+                </tr>
+
+                <tr>
+                    <td><b>Ambulance Expenses</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>Max 1500 per Hospitalization</td>
+                </tr>
+
+                <tr>
+                    <td><b>Non-Allopathic Treatment</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>New Born Baby Cover</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>Daily Hospitalization Allowance</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>Up to 500 per day</td>
+                </tr>
+
+                <tr>
+                    <td><b>Donor Expenses</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>Up to basic sum insured</td>
+                </tr>
+
+                <tr>
+                    <td><b>Attendant Allowance</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>No claim Discount</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+                <tr>
+                    <td><b>No Claim Bonus</b></td>
+                </tr>
+                <tr>
+                    <td><span class="point"></span>NA</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+    <div class="col-md-12">
+        <br>
+        <p>P.S: The about Quotations are subject to verification by respective insurer</p>
+        <h5><b>
+            Please feel free to contact me for more details and renewal</b></h5>
+    </div>
+
+    <div class="img-responsive">
+        <table class="table table-striped">
+            <tr style="width:100%">
+                <td style="width:30%"><img src="img/profile_pic.png" id="pospPhoto" alt="Not Found"
+                         onerror=this.src="file:///android_asset/profile_pic.png" width="100"
+                         class="img-responsive"/></td>
+                <td style="text-align:left !important;"><h4 id="pospName" class="red-txt">XXXXX</h4>
+                    <h5 id="deg" class="posp-txt" style="margin-top:-6px">XXXXX</h5>
+                    <h4 id="phone" class="posp-txt" style="margin-top:-7px; color: #4FB4E9;">98XXXXXXXX</h4>
+                    <b>  <h5 id="email" class="posp-txt" style="margin-top:-7px">XXXXX@gmail.com</h5> </b></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+<script>
+
+
+
+    function init(bikeReponse,userReponse,otherResponse)
+    {
+        var otherDetails = JSON.parse(userReponse);
+
+        document.getElementById('name').innerHTML = otherResponse;
+
+
+        document.getElementById('pospName').innerHTML = otherDetails.pospNAme;
+        document.getElementById('pospPhoto').src = otherDetails.pospPhotoUrl;
+        document.getElementById('deg').innerHTML = otherDetails.pospDesg;
+        document.getElementById('phone').innerHTML = otherDetails.PospMobNo;;
+        document.getElementById('email').innerHTML = otherDetails.pospEmail;;
+
+
+        var response = bikeReponse;
+        response = response.replace(/\n+/g, "");
+         response = response.replace(/\r/, "");
+        response = JSON.parse(response);
+
+        var HTML = "";
+
+        document.getElementById('divHealth').innerHTML = "";
+        document.getElementById('lblPlanName').innerHTML = response.ProductName;
+
+            HTML = HTML + '  <div class="col-md-12" id="divHealth">';
+            HTML = HTML + '<div class="table-responsive box-shadow">';
+            HTML = HTML + '<table class="table table-bordered tbl2" >';
+            HTML = HTML + '  <tbody>';
+            HTML = HTML + '<tr>';
+            HTML = HTML + '<td style="width:40%;"><img src="' + response.InsurerLogoName + '" class="img-responsive center" /></td>';
+            HTML = HTML + ' <td><p>SUM ASSURED</p><h5><b>₹ ' + response.SumInsured + '</h5></b></td>';
+            HTML = HTML + '<td><p>DEDUCTIBLE</p><h5><b>₹ ' + response.Deductible_Amount + '</b></h5></td>';
+            HTML = HTML + '</tr>';
+            HTML = HTML + ' <tr>';
+            HTML = HTML + ' <td><b>' + response.ProductName + '</b><h5><b>' + response.PlanName + ' </b></h5> </td>';
+
+             if (response.servicetaxincl.toLowerCase() == "e") {
+                HTML = HTML + '<td colspan="2"><p class="text-center" style="color:#f95f67">PREMIUM</p> <span  class="amount" > ₹ ' + response.NetPremium + '/Year</span></td>';
+            }
+            else if (response.servicetaxincl.toLowerCase() == "i") {
+                HTML = HTML + '<td colspan="2"><p class="text-center" style="color:#f95f67">PREMIUM</p> <span  class="amount" > ₹ ' + response.GrossPremium + '/Year</span></td>';
+            }
+            HTML = HTML + ' </tr>';
+            HTML = HTML + '</tbody>';
+            HTML = HTML + '</table>';
+            HTML = HTML + '</div>';
+            HTML = HTML + '</div>';
+
+
+
+            document.getElementById('divHealth').innerHTML = HTML;
+            document.getElementById('divBeneFits').innerHTML = "";
+            var Benefits = "";
+            Benefits = Benefits + '<table class="table table-striped">';
+
+            for (var i = 0; i < response.LstbenfitsFive.length; i++) {
+
+                Benefits = Benefits + '<tr>';
+                Benefits = Benefits + '<td><b>' + response.LstbenfitsFive[i].BeneDesc + '</b></td>';
+                Benefits = Benefits + '</tr>';
+                Benefits = Benefits + '<tr>';
+                Benefits = Benefits + ' <td><span class="point"></span>' + response.LstbenfitsFive[i].Benefit + '</td>';
+                Benefits = Benefits + '</tr>';
+            }
+            Benefits = Benefits + '  </table>';
+            document.getElementById('divBeneFits').innerHTML = Benefits;
+    }
+
+
+
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_input"
+        android:title="INPUT" />
+
+    <item
+        android:id="@+id/navigation_quote"
+        android:title="QUOTE" />
+
+    <item
+        android:id="@+id/navigation_buy"
+        android:title="BUY" />
+
+</menu>

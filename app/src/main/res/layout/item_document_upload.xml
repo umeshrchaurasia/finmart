@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rlParent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ivPhotoCam"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/ivPhoto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="2dp"
+            android:src="@drawable/doc_notuploaded" />
+
+        <TextView
+            android:id="@+id/tvDocName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="FBA PHOTOGRAPH" />
+
+
+        <ImageView
+            android:id="@+id/ivPhotoGallery"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:src="@drawable/folder_icon"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivPhotoCam"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="5dp"
+        android:padding="2dp"
+        android:src="@drawable/ic_camera_alt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/test"
+        android:background="?attr/colorPrimary" />
+
+</RelativeLayout>

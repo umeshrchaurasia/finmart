@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.datacomp.magicfinmart.onlineexpressloan.RblpersonalloanActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/TextStyle.Toolbar"
+            app:titleTextColor="@color/white"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ccPersonal"
+                style="@style/CardStyle.Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:text="personal details"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="8dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*First Name">
+
+                            <EditText
+                                android:id="@+id/etFirstName"
+                                style="@style/Style.edittext"
+                                android:drawableRight="@drawable/vector_person"
+
+                                android:inputType="textCapWords"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                                android:maxLength="50"
+                                android:maxLines="1" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Middle Name">
+
+                            <EditText
+                                android:id="@+id/etMiddleName"
+                                style="@style/Style.edittext"
+                                android:drawableRight="@drawable/vector_person"
+                                android:inputType="textCapWords"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Last Name">
+
+                            <EditText
+                                android:id="@+id/etLastName"
+                                style="@style/Style.edittext"
+                                android:drawableRight="@drawable/vector_person"
+                                android:inputType="textCapWords"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                                android:maxLength="50"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Date Of Birth">
+
+
+                            <EditText
+                                android:id="@+id/etDOB"
+                                style="@style/Style.edittext"
+                                android:drawableRight="@drawable/vector_date"
+                                android:focusable="false" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <RadioGroup
+                            android:id="@+id/rgGender"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbmale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:checked="true"
+                                android:text="Male" />
+
+                            <RadioButton
+                                android:id="@+id/rbfemale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Female" />
+
+                            <RadioButton
+                                android:id="@+id/rbOther"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="Third Gender" />
+                        </RadioGroup>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Monthly Income">
+
+                            <EditText
+                                android:id="@+id/etMonthlyIncome"
+                                style="@style/Style.edittext"
+                                android:inputType="number"
+                                android:digits="0123456789"
+                                android:maxLength="9"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Mobile Number">
+
+                            <EditText
+                                android:id="@+id/etMobile"
+                                style="@style/Style.edittext"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:maxLines="1" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*E-mail">
+
+                            <EditText
+                                android:id="@+id/etEmailPers"
+                                style="@style/Style.edittext"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="100"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <Spinner
+                            android:id="@+id/spQualification"
+                            style="@style/SpinnerStyle.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:entries="@array/exp_qualification">
+
+                        </Spinner>
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <Spinner
+                            android:id="@+id/spResType"
+                            style="@style/SpinnerStyle.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/exp_residence_type"
+                            android:gravity="center" />
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Living Since">
+
+
+                            <EditText
+                                android:id="@+id/etLivingSince"
+                                style="@style/Style.edittext"
+                                android:drawableRight="@drawable/vector_date"
+                                android:focusable="false" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/TextInputLayoutStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*City">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/acCity"
+                                style="@style/Style.edittext"
+                                android:inputType="text"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/TextAppearence.App.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:hint="*PinCode">
+
+                            <EditText
+                                android:id="@+id/etPincode"
+                                style="@style/Style.edittext"
+                                android:digits="0123456789"
+                                android:inputType="phone"
+                                android:maxLength="6"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Address Line 1">
+
+                            <EditText
+                                android:id="@+id/etAddress1"
+                                style="@style/Style.edittext"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Address Line 2">
+
+                            <EditText
+                                android:id="@+id/etAddress2"
+                                style="@style/Style.edittext"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/TextAppearence.App.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:hint="*Landmark">
+
+                            <EditText
+                                android:id="@+id/etLandmark"
+                                style="@style/Style.edittext"
+                                android:inputType="text"
+                                android:maxLength="100"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Spinner
+                            android:id="@+id/spSalaried"
+                            style="@style/SpinnerStyle.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                            android:layout_weight="1"
+
+                            android:entries="@array/exp_employment_salaried"
+                            android:gravity="center" />
+
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            style="@style/TextAppearence.App.TextInputLayout"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:hint="Existing EMI (If Any)">
+
+                            <EditText
+                                android:id="@+id/etEMI"
+                                style="@style/Style.edittext"
+                                android:digits="0123456789"
+                                android:ems="10"
+                                android:inputType="phone"
+                                android:maxLength="9"
+                                android:text="0" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                    </TableRow>
+
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ccQuoteDetail"
+                style="@style/CardStyle.Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:text="Get Quote"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="8dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Loan Amount">
+
+                            <EditText
+                                android:id="@+id/etLoanAmount"
+                                style="@style/Style.edittext"
+                                android:inputType="phone"
+                                android:digits="0123456789"
+
+                                android:maxLength="7"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <Spinner
+                            android:id="@+id/spTenure"
+                            style="@style/SpinnerStyle.Underlined"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/exp_tenure"
+                            android:gravity="center" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="*Loan Required">
+
+                            <EditText
+                                android:id="@+id/etLoanReq"
+                                style="@style/Style.edittext"
+                                android:digits="0123456789"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:inputType="phone"
+                                android:maxLength="7"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Rate Type">
+
+                            <EditText
+                                android:id="@+id/etRateType"
+                                style="@style/Style.edittext"
+                                android:ems="10"
+                                android:enabled="false"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:text="Fixed" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Best Rate">
+
+                            <EditText
+                                android:id="@+id/etBestRate"
+                                style="@style/Style.edittext"
+                                android:enabled="false"
+                                android:inputType="text"
+                                android:text="16%"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="EMI">
+
+                            <EditText
+                                android:id="@+id/etQuteEMI"
+                                style="@style/Style.edittext"
+                                android:digits="0123456789"
+                                android:enabled="false"
+                                android:inputType="phone"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="0dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Processing Fee">
+
+                            <EditText
+                                android:id="@+id/etProcessingFees"
+                                style="@style/Style.edittext"
+                                android:enabled="false"
+                                android:inputType="text"
+                                android:maxLines="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </TableRow>
+
+
+
+                </TableLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ccCompantDetail"
+                style="@style/CardStyle.Home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bg"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:text="@string/Emp_detail"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="8dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/TextAppearence.App.TextInputLayout"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:hint="*Employer Name">
+
+                                <EditText
+                                    android:id="@+id/etEmployerName"
+                                    style="@style/Style.edittext"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                                    android:inputType="textCapWords"
+                                    android:maxLength="100"
+                                    android:maxLines="1"
+                                    android:text="" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="*Joining Date">
+
+                                <EditText
+                                    android:id="@+id/etJoin"
+                                    style="@style/Style.edittext"
+                                    android:layout_weight="1"
+                                    android:drawableRight="@drawable/vector_date"
+                                    android:focusable="false" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="*Office Address Line 1">
+
+                                <EditText
+                                    android:id="@+id/etOffAddress1"
+                                    style="@style/Style.edittext"
+                                    android:inputType="text"
+                                    android:maxLength="100"
+                                    android:maxLines="1" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="Office Address Line 2">
+
+                                <EditText
+                                    android:id="@+id/etOffAddress2"
+                                    style="@style/Style.edittext"
+                                    android:inputType="text"
+                                    android:maxLength="100"
+                                    android:maxLines="1" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="8dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="*Phone No">
+
+                                <EditText
+                                    android:id="@+id/etOffphoneNo"
+                                    style="@style/Style.edittext"
+                                    android:inputType="number"
+                                    android:maxLength="9"
+                                    android:maxLines="1" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="*Total Work Experience">
+
+                                <EditText
+                                    android:id="@+id/etTotWorkExp"
+                                    style="@style/Style.edittext"
+                                    android:digits="0123456789"
+                                    android:inputType="phone"
+                                    android:maxLength="2"
+                                    android:maxLines="1" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="0dp">
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/TextInputLayoutStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="*City">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/acOffCity"
+                                    style="@style/Style.edittext"
+                                    android:inputType="text"
+                                    android:maxLines="1" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/TextAppearence.App.TextInputLayout"
+                                android:layout_width="0dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_weight="1"
+                                android:hint="*PinCode">
+
+                                <EditText
+                                    android:id="@+id/etOffPincode"
+                                    style="@style/Style.edittext"
+                                    android:digits="0123456789"
+                                    android:inputType="phone"
+                                    android:maxLength="6"
+                                    android:maxLines="1" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </TableRow>
+
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="0dp">
+
+
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:hint="*PanCard">
+
+                                <EditText
+                                    android:id="@+id/etOffPancard"
+                                    style="@style/Style.edittext"
+                                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="10"
+                                    android:maxLines="1" />
+                            </android.support.design.widget.TextInputLayout>
+
+                            <Spinner
+                                android:id="@+id/spOrgCategory"
+                                style="@style/SpinnerStyle.Underlined"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+
+                                android:layout_weight="1"
+                                android:entries="@array/exp_organization"
+                                android:gravity="center" />
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <CheckBox
+                android:id="@+id/chkRblCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:padding="4dp"
+                android:text="@string/express_rbl_terms_con" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/ButtonStyle.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="Submit" />
+
+</LinearLayout>

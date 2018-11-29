@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/CardViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordertbl"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordertbl"
+                    android:minHeight="60dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="25"
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/ivBankLogo"
+                            android:layout_margin="2dp"
+                            android:scaleType="fitCenter"
+                            android:layout_width="match_parent"
+                            android:layout_height="42dp" />
+
+                        <TextView
+                            android:id="@+id/tvBankName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            style="@style/TextViewStyle.Small"
+                            android:paddingLeft="5dp"
+                            android:ellipsize="end"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:maxLines="3"
+                            android:textSize="9dp"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:text="LOAN ELIGIBLE"
+                            android:textColor="@color/text_edit_color"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvEligibleLoan"
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="22"
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:text="EMI"
+                            android:textColor="@color/text_edit_color"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvBestEmi"
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"></TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="25"
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:text="EMI PER LAC"
+                            android:textColor="@color/text_edit_color"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvEmiperlac"
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordertbl"
+                    android:minHeight="60dp"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="25"
+
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:text=""
+                            android:id="@+id/tvBestRatetype"
+                            android:textColor="@color/text_edit_color"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvBestRate"
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"></TextView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:text="PROCESSING FEE"
+                            android:textColor="@color/text_edit_color">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tvProcessingFee"
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="22"
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:text="TENURE"
+                            android:textColor="@color/text_edit_color"></TextView>
+
+                        <TextView
+                            android:id="@+id/tvLoanTenure"
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical|left"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/black"></TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llbtnApply"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="25"
+                        android:background="@drawable/bordertbl"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#f38d1e"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingBottom="0dp"
+                            android:paddingTop="0dp">
+
+
+
+                            <TextView
+                                android:id="@+id/btnApply"
+                                android:textAppearance="@style/TextViewStyle.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="1dp"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:minHeight="30dp"
+                                android:text="Paperless  Approval"
+                                android:textColor="@android:color/white" />
+                        </LinearLayout>y
+                    </LinearLayout>
+
+
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:id="@+id/llivArrow"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Key Highlights" />
+
+                <ImageView
+                    android:id="@+id/ivArrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/down_arrow_grey" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rvhlknowmore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightGrey"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="Pre-Closure Fee"
+                        android:textAppearance="@style/TextViewStyle.Medium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:text=""
+                        android:textAppearance="@style/TextViewStyle.Medium"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="Part Payment Available"
+                        android:textAppearance="@style/TextViewStyle.Medium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCount2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+
+                        android:textAppearance="@style/TextViewStyle.Medium"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightGrey"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="Guarantor Required"
+                        android:textAppearance="@style/TextViewStyle.Medium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCount3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+
+                        android:textAppearance="@style/TextViewStyle.Medium"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="Special Rates For Women Applicable"
+                        android:textAppearance="@style/TextViewStyle.Medium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCount4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+
+                        android:textAppearance="@style/TextViewStyle.Medium"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightGrey"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="E-Approval Available"
+                        android:textAppearance="@style/TextViewStyle.Medium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCount5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+
+                        android:textAppearance="@style/TextViewStyle.Medium"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:paddingLeft="10dp"
+                        android:text="Balance Transfer Available"
+                        android:textAppearance="@style/TextViewStyle.Medium"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tvDetailsCount6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+
+                        android:textAppearance="@style/TextViewStyle.Medium"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llbacklist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/colorPrimaryDark"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dp"
+                        android:text="BACK TO LIST"
+                        android:textAppearance="@style/TextViewStyle.Medium"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Health Insurance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+body {font-size:13px;}
+.blu-heading {padding:10px;border:1px solid #4d62b5;color:#4d62b5;font-size: 16px;}
+.red-txt {color:#b60d2a;}
+.col-md-12 {padding:0px;}
+.tbl2 td {text-align:left;}
+.tbl2 p {color:#999;font-size: 12px;}
+.box-shadow {box-shadow: 1px 1px 3px 0px #ccc;}
+.amount {background: #f95f67;padding: 5px 15px;margin: 4px;font-size: 16px;color: #fff; display:block; text-align:center}
+.center {display: block;margin:0 auto;}
+.brd-left {border-right:1px solid #eee !important;}
+.bg-gray {background:#ddd;}
+.glyphicon {    font-weight: normal;font-size: 10px; color:#666;margin-right:4px;}
+ul li {margin:2px; padding:4px !important;}
+.table>tbody>tr>td {padding:6px;}
+
+.red-txt {
+            color: #b60d2a;
+        }
+  .blue-txt {
+            color: #4FB4E9;font-size:19px;
+        }
+.posp-txt {
+            font-size:14px;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="col-md-12">
+        <br>
+        <p>Dear <b class="red-txt" id="name"></b>,</p>
+        <p>Please find below Your Health Insurance quotations.</p>
+    </div>
+
+
+    <div class="col-md-12" id="divshow">
+        <div class="table-responsive box-shadow">
+            <table class="table table-bordered tbl2">
+                <tbody>
+                <tr>
+                    <td><img src="img/reliance_logo.png" class="img-responsive center"/></td>
+                    <td><p>SUM ASSURED</p><h5><b>₹ XXXXX</b></h5></td>
+                    <td><p>DEDUCT DLE</p><h5><b>₹ XXXXX</b></h5></td>
+                </tr>
+                <tr>
+                    <td><p>CARE FLOATER</p><h5><b>XXXXX </b></h5></td>
+                    <td colspan="2"><p class="text-center">PREMIUM</p> <a href="#" class="amount">₹
+                        XXXXX</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="col-md-12">
+        <p>P.S: The about Quotations are subject to verification by respective insurers</p>
+        <h5><b>
+            Please feel free to contact me for more details and renewal</b></h5>
+    </div>
+
+    <div class="col-md-12">
+        <div class="img-responsive">
+            <table class="table table-striped">
+                <tr style="width:100%">
+                    <td style="width:30%"><img src="img/profile_pic.png" id="pospPhoto"
+                                               alt="Not Found"
+                                               onerror=this.src="file:///android_asset/profile_pic.png"
+                                               width="100"
+                                               class="img-responsive"/></td>
+                    <td style="text-align:left !important;"><h4 id="pospName" class="red-txt">
+                        XXXXX</h4>
+                        <h5 id="deg" class="posp-txt" style="margin-top:-6px">XXXXX</h5>
+                        <h4 id="phone" class="posp-txt" style="margin-top:-7px; color: #4FB4E9;">
+                            98XXXXXXXX</h4>
+                        <b><h5 id="email" class="posp-txt" style="margin-top:-7px">
+                            XXXXX@gmail.com</h5></b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</div>
+</body>
+<script>
+
+     function init(quoteResponse,UserResponse,otherDetails){
+
+        quoteResponse = quoteResponse.replace(/\n/g, " ");
+        quoteResponse = quoteResponse.replace(/\r/g, " ");
+
+      var quotes= JSON.parse(quoteResponse);
+      var user =JSON.parse(UserResponse);
+      var other =JSON.parse(otherDetails);
+
+      document.getElementById('name').innerHTML = other.NAME;
+
+      document.getElementById('pospName').innerHTML = user.pospNAme;
+      document.getElementById('pospPhoto').src = user.pospPhotoUrl;
+      document.getElementById('deg').innerHTML = user.pospDesg;
+      document.getElementById('phone').innerHTML = user.PospMobNo;
+      document.getElementById('email').innerHTML = user.pospEmail;
+
+        var HTML = "";
+
+        for (var i = 0; i < quotes.length; i++)
+        {
+
+         HTML = HTML + '<div class=""><table class="table table-bordered tbl2"><tbody><tr><td style="width:40%;"><img  alt="No Image" src="' + quotes[i].InsurerLogoName + '" class="img-responsive center" /></td><td><p>SUM ASSURED</p><h5><b>₹ ' + quotes[i].SumInsured + '</b></h5></td><td><p>DEDUCTIBLE</p><h5><b>₹ ' + quotes[i].Deductible_Amount + '</b></h5></td></tr><tr><td><b style="font-size:14px;">' + quotes[i].ProductName + '</b><h5><b style="font-size:12px;">' + quotes[i].PlanName + ' </b></h5></td>';
+            if (quotes[i].servicetaxincl.toLowerCase() == "e") {
+                HTML = HTML + '<td colspan="2"><p class="text-center" style="color:#f95f67">PREMIUM</p> <span  class="amount" > ₹ ' + quotes[i].NetPremium + '/Year</span></td>';
+            }
+            else if (quotes[i].servicetaxincl.toLowerCase() == "i") {
+                HTML = HTML + '<td colspan="2"><p class="text-center" style="color:#f95f67">PREMIUM</p> <span  class="amount" > ₹ ' + quotes[i].GrossPremium + '/Year</span></td>';
+            }
+
+        }
+    document.getElementById('divshow').innerHTML = HTML;
+    Android.processComplete();
+    }
+
+
+
+</script>
+</html>

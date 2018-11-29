@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderthealthcheckup"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="18dp">
+
+            <ImageView
+                android:id="@+id/imgInsurerLogo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/hdfc_life_icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/search_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:minHeight="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewStyle.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COVER"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtCover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="1000000"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:background="@color/search_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:minHeight="60dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPlanNAme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:gravity="center"
+                    android:text="IProtectSmart"
+                    android:textColor="@color/header_text_color"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivInfo"
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="20"
+                    android:src="@drawable/infop"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/search_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:minHeight="60dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:minHeight="60dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="18dp">
+
+                    <TextView
+                        style="@style/TextViewStyle.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="POLICY TERM"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/txtPolicyTerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="20 Yrs."
+                        android:textColor="@color/header_text_color"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.6dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/search_gray" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:minHeight="60dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="18dp">
+
+                    <TextView
+                        style="@style/TextViewStyle.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UP TO AGE"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/txtAge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="38 Yrs."
+                        android:textColor="@color/header_text_color"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.6dp"
+            android:layout_height="match_parent"
+            android:background="@color/search_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="18dp">
+
+            <TextView
+                android:id="@+id/txtFinalPremium"
+                style="@style/TextViewStyle.Large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#ff5c61"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="999999"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCustomise"
+                    style="@style/TextViewStyle.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/progress_blue"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:text="CUSTOMISE"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/ivPdf"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/pdf_icon"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivBuy"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/cart"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llAddon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="-1dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/border_term_benefit"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvAddOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_term_benefit"
+            android:paddingBottom="23dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_below="@+id/ll" />
+
+    <TextView
+        android:id="@+id/tvBenefits"
+        style="@style/TextViewStyle.VerySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/view4"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borderthealthcheckup"
+        android:gravity="top"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="SEE ALL BENEFITS"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/ivDownArrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/view4"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/down" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_below="@+id/llAddon"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvBenefitsBelow"
+        style="@style/TextViewStyle.VerySmall"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/view5"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borderthealthcheckup"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text="SEE ALL BENEFITS"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivUpArrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/view5"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/up"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

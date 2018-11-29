@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/view_spacing_small"
+    android:background="@drawable/bordertbl"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imgInsurer"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_margin="2dp"
+            android:layout_weight="35"
+            android:scaleType="fitStart" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrey" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <!--sum assured-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/TextStyle.TextSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Sum Assured"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtSumAssured"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--deductible-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextStyle.TextSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Deductible"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/txtDeductible"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--compare-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chkCompare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center" />
+
+                <TextView
+                    style="@style/TextStyle.TextSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMPARE"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/header_light_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <!--product detail-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="35"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtProductName"
+                style="@style/TextStyle.TextMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlanName"
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:inputType="textCapWords"
+                android:lines="2"
+                android:minLines="2"
+                android:singleLine="false" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/lightGrey" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="65"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <!--premium-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="30"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewStyle.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:text="Premium"
+                    android:textAllCaps="true"
+                    android:textColor="#ff5c61" />
+
+                <TextView
+                    android:id="@+id/txtFinalPremium"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#ff5c61"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <!--buy now-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="30"
+                android:gravity="center|bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewStyle.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|top"
+                    android:text="Premium"
+                    android:textAllCaps="true"
+                    android:textColor="#ff5c61"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtBuy"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#f38d1e"
+                    android:drawableLeft="@mipmap/buy"
+                    android:drawablePadding="4dp"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:text="BUY NOW"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGrey" />
+
+    <!--Features-->
+
+    <LinearLayout
+        android:id="@+id/llBenefits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordertbl"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bg1"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:paddingLeft="4dp">
+
+
+            <TextView
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_correct_tick"
+                android:drawablePadding="4dp"
+                android:text="ROOM RENT"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtRoomRent"
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@drawable/ic_correct_tick"
+                android:drawablePadding="4dp"
+                android:text="PRE-HOSP"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPreHosp"
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/bg1"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:paddingRight="4dp">
+
+
+            <TextView
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_correct_tick"
+                android:drawablePadding="4dp"
+                android:text="ICU RENT"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtIcuRent"
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+            <TextView
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawableLeft="@drawable/ic_correct_tick"
+                android:drawablePadding="4dp"
+                android:text="POST-HOSP"
+                android:textAllCaps="true"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPostHosp"
+                style="@style/TextStyle.TextSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/bordertbl"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNoOfInsurer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0.6"
+                android:background="@color/white"
+                android:drawablePadding="12dp"
+                android:gravity="bottom|center_horizontal"
+                android:textColor="@color/red_text"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:background="@color/white"
+                android:minHeight="24dp"
+                android:minWidth="24dp"
+                android:src="@drawable/drop_down_arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

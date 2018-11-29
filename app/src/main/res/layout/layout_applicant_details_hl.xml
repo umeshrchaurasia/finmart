@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/lightGrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:hint="Applicant Name">
+
+            <EditText
+                android:id="@+id/etNameOfApplicant"
+
+                android:maxLines="1"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
+                android:drawableRight="@drawable/vector_person"
+                android:inputType="textCapWords"
+                style="@style/Style.edittext" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+               <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewStyle.Medium"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Gender" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/txtrbimgMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/customeborder_blue"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="MALE"
+                    android:textColor="?attr/colorPrimary" />
+
+                <TextView
+
+                    android:id="@+id/txtrbimgFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/customeborder"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="FEMALE"
+                    android:textColor="@color/description_text" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="horizontal">
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:gravity="bottom"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+
+
+            android:hint="Date of Birth">
+
+            <EditText
+                android:id="@+id/et_DOB"
+                style="@style/Style.edittext"
+                android:drawableRight="@drawable/vector_date"
+                android:focusable="false" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                style="@style/TextViewStyle.Medium"
+                android:text="Occupation" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/txtSalaried"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/customeborder_blue"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="SALARIED"
+                    android:textColor="?attr/colorPrimary" />
+
+                <TextView
+
+                    android:id="@+id/txtSelfEMp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="50"
+                    android:background="@drawable/customeborder"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="SELF-EMP"
+                    android:textColor="@color/description_text" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+      >
+
+        <LinearLayout
+            android:id="@+id/llSelfEmployeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="Turnover/ Top-Line">
+
+
+
+                    <EditText
+                        android:id="@+id/etTurnOver"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="Profit After Tax">
+
+                    <EditText
+                        android:id="@+id/etProfitAtTax"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="Depreciation">
+
+
+
+                    <EditText
+                        android:id="@+id/etDepreciation"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="Partner Remuneration">
+
+                    <EditText
+                        android:id="@+id/etDirecPartRemuntion"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSalaried"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:hint="Monthly Income">
+
+                    <EditText
+                        android:id="@+id/etMonthlyInc"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/TextAppearence.App.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:hint="Existing EMI (If Any)">
+
+                    <EditText
+                        android:id="@+id/etEMI"
+                        style="@style/Style.edittext"
+                        android:digits="0123456789"
+                        android:ems="10"
+                        android:text="0"
+                        android:maxLength="9"
+                        android:inputType="phone" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/chkCoApplicant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="5dp"
+                android:text="" />
+            <TextView
+                android:id="@+id/textCoApplicant"
+                android:layout_width="wrap_content"
+                style="@style/TextViewStyle.Large"
+                android:padding="8dp"
+                android:gravity="center"
+                android:background="@color/secondary_text_color"
+                android:textColor="@color/white"
+                android:text="ADD CO-APPLICANT" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

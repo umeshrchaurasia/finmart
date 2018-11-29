@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="share package details"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <TextView
+        style="@style/TextStyle.TextMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:inputType="textCapWords"
+        android:padding="8dp"
+        android:text="Personalise With Custom Name"
+        android:textAllCaps="true"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/input"
+        style="@style/Style.edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/txtShare"
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_spacing_small"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/view_spacing_small"
+        android:background="@drawable/customeborder"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="SHARE WITH WHATSAPP"
+        android:textColor="@color/red_text" />
+</LinearLayout>

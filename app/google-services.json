@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "326206821533",
+    "firebase_url": "https://finmart-5e78b.firebaseio.com",
+    "project_id": "finmart-5e78b",
+    "storage_bucket": "finmart-5e78b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326206821533:android:e75dd8d7d7b8d02e",
+        "android_client_info": {
+          "package_name": "com.datacomp.magicfinmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326206821533-igdg09mkmeslssei7qusj2ftfrh0kg53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.datacomp.magicfinmart",
+            "certificate_hash": "553cd2c828e4da3fe3b631d4c16490141a949530"
+          }
+        },
+        {
+          "client_id": "326206821533-b1b5bforvtulskq31rk4d15kdmk7o9e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh3nnyjObbE9QLCzNUt9ESFKfWlxCjw6Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326206821533-b1b5bforvtulskq31rk4d15kdmk7o9e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

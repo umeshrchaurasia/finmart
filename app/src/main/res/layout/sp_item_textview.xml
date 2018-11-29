@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txtspinneritem"
+        style="@style/TextViewStyle.Medium"
+        android:ellipsize="end"
+        android:ems="4"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:singleLine="true"
+        android:text="1.8 SX Petrol , (1797CC)"
+        android:textAllCaps="true"
+        android:textColor="@color/header_dark_text"
+        android:textIsSelectable="false"
+        android:textSize="14sp" />
+</LinearLayout>

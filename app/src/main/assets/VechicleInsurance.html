@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vechicle Insurance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+      body {font-size:12px;}
+      .table>tbody>tr>td {padding:6px;}
+.blu-heading {padding:10px;border:1px solid #4d62b5;color:#4d62b5;font-size: 16px;}
+.red-txt {color:#b60d2a;}
+.tbl1 {text-align:center;}
+.tbl1 td {border:1px solid #4d62b5 !important;}
+.col-md-12 {padding:0px;}
+.tbl2 td {border:0px !important;text-align:center;}
+.box-shadow {box-shadow: 1px 1px 3px 0px #ccc;}
+/*.amount {background: #f95f67;padding: 5px 15px;margin: 4px;font-size: 16px;color: #fff;width:95px !important}*/
+.amount {
+    background: #f95f67;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #fff;
+    width: 95px !important;
+    display: block;
+    margin: 0 auto;
+    margin-top: -10px;
+}
+.center {display: block;margin:0 auto; margin-top:2px;height:45px;}
+.brd-left {border-right:1px solid #eee !important;}
+.bg-gray {background:#f5f5f5;}
+.glyphicon {    font-weight: normal;font-size: 10px; color:#666;margin-right:4px;}
+ul li {margin:2px; padding:4px !important;}
+.center-txt td {padding:0px;}
+.img-pad {padding:0px !important;margin:0px !important;padding-left: 2px;}
+/*.img-pad img {padding:0px;margin:0px;}*/
+.list1 {margin:0px; padding:0px;text-align:left}
+.list1 li {overflow:hidden;float:left;text-decoration:none;width: 50%; list-style-type:none; font-size:10px;margin:0px;padding-left:2px !important;}
+.no-padding {padding : 1px !important;margin:0px;}
+ .red-txt {
+            color: #b60d2a;
+        }
+        .blue-txt {
+            color: #4FB4E9;
+
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="col-md-12">
+        <h3 class="blu-heading text-center">Quotation for Insurance of your Vehicle</h3>
+        <p>Dear <b class="red-txt" id="name"></b>,</p>
+        <p>Please find below our best quotations for <span id="instype"> renewal of </span> insurance of your vehicle</p>
+    </div>
+
+    <!--vechile details-->
+    <div class="col-md-12">
+        <div class="table-responsive">
+            <table class="table table-bordered tbl1" id="tblrenew">
+                <tr>
+                    <td colspan="2"><b id="regNo">XXXX</b></td>
+                </tr>
+
+                <tr>
+                    <td  style="text-align:left;"><b id="cc"> XXXX </b></td>
+                    <td style="text-align:left;">Policy Exp. Date : <b><span id="expDate">XXXX</span></b></td>
+                </tr>
+                <tr>
+                    <td style="text-align:left;">Present NCB : <b><span id="ncbPercent">XXXX</span>%</b></td>
+                    <td style="text-align:left;">Claim In Present Year : <span><b id="claim">XXXX</b></span></td>
+                </tr>
+            </table>
+            <table class="table table-bordered tbl1" style="display:none" id="tblnew">
+                <tr>
+                    <td colspan="2" ><b id="lblVehiclenew">XXXX</b></td>
+                </tr>
+
+                <tr>
+                    <td  style="text-align:left;"> <b id="lblccnew">XXXX </b></td>
+                    <td  style="text-align:left;">Policy Reg. Date : <b><span id="lblPolRegDatenew">XXXX</span></b></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+
+    <div class="col-md-12" id="divshow">
+        <div class="table-responsive box-shadow">
+            <table class="table table-bordered tbl2">
+                <tbody>
+                <tr>
+                    <td rowspan="2" style="border-right:1px solid #ccc !important;"><img src=""
+                                                                                         class="img-responsive center"/>
+                    </td>
+                    <td>IDV</td>
+                    <td>PREMIIUM</td>
+                </tr>
+                <tr>
+                    <td>XXXX</td>
+                    <td><a href="#" class="amount">? XXXX</a></td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table bg-gray text-center">
+                <tbody class="center-txt">
+                <tr>
+                    <td><span class="glyphicon glyphicon-ok"></span> simply dummy text</td>
+                    <td><span class="glyphicon glyphicon-ok"></span> simply dummy text</td>
+                </tr>
+                <tr>
+                    <td><span class="glyphicon glyphicon-ok"></span> simply dummy text</td>
+                    <td><span class="glyphicon glyphicon-ok"></span> simply dummy text</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <p>P.S: The above Quotations are subject to verification by respective insurers</p>
+        <h5><b>
+            Please feel free to contact me for more details and renewal</b></h5>
+    </div>
+
+    <div class="col-md-12">
+        <div class="img-responsive">
+            <table class="table table-striped">
+                <tr style="width:100%">
+                    <td style="width:30%"><img src="img/profile_pic.png" id="pospPhoto" alt="Not Found"
+                              onerror=this.src="file:///android_asset/profile_pic.png" width="100"
+                              class="img-responsiv"  height="100" /></td>
+                    <td style="text-align:left !important;"><h4 id="pospName" class="red-txt">Test User</h4>
+                        <h5 id="deg" class="posp-txt" style="margin-top:-6px">Landmark POSP</h5>
+                        <h4 id="phone" class="posp-txt" style="margin-top:-7px; color: #4FB4E9;">98XXXXXXXX</h4>
+                        <b>  <h5 id="email" class="posp-txt" style="margin-top:-7px">XXXXX@gmail.com</h5> </b></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript">
+
+
+
+
+    function init(bikeReponse,userReponse,carReponse){
+
+
+        var addon_list = {
+        'addon_ambulance_charge_cover': 'Ambulance Charge',
+        'addon_consumable_cover': 'Consumables',
+        'addon_daily_allowance_cover': 'Daily Allowance',
+        'addon_engine_protector_cover': 'Engine Protection',
+        'addon_hospital_cash_cover': 'Hospital Cash',
+        'addon_hydrostatic_lock_cover': 'Hydrostatic Lock',
+        'addon_inconvenience_allowance_cover': 'Inconvinenience Allowance',
+        'addon_invoice_price_cover': 'Invoice Price',
+        'addon_key_lock_cover': 'Key Lock',
+        'addon_losstime_protection_cover': 'Loss-Time Protection',
+        'addon_medical_expense_cover': 'Medical Expense',
+        'addon_ncb_protection_cover': 'NCB Protection',
+        'addon_passenger_assistance_cover': 'Passenger Assistance',
+        'addon_personal_belonging_loss_cover': 'Personal Belonging Loss',
+        'addon_road_assist_cover': 'RoadSide Assistance',
+        'addon_rodent_bite_cover': 'Rodent Bite',
+        'addon_tyre_coverage_cover': 'Tyre Coverage',
+        'addon_windshield_cover': 'Windshield Protection',
+        'addon_zero_dep_cover': 'Zero Depreciation'
+    };
+
+
+      var response= JSON.parse(bikeReponse);
+      var otherDetails =JSON.parse(userReponse);
+
+      document.getElementById('name').innerHTML = response.Summary.Request_Core.first_name + " " + response.Summary.Request_Core.last_name;
+
+      document.getElementById('regNo').innerHTML = otherDetails.CAR_NAME;
+      document.getElementById('expDate').innerHTML = response.Summary.Request_Core.policy_expiry_date;
+
+      document.getElementById('cc').innerHTML = otherDetails.CC;
+      document.getElementById('ncbPercent').innerHTML = response.Summary.Request_Core.vehicle_ncb_current;
+      document.getElementById('claim').innerHTML = response.Summary.Request_Core.is_claim_exists.toUpperCase();;
+
+      document.getElementById('pospName').innerHTML = otherDetails.pospNAme;
+      document.getElementById('pospPhoto').src = otherDetails.pospPhotoUrl;
+      document.getElementById('deg').innerHTML = otherDetails.pospDesg;
+      document.getElementById('phone').innerHTML = otherDetails.PospMobNo;;
+      document.getElementById('email').innerHTML = otherDetails.pospEmail;;
+       var Policyexp = response.Summary.Request_Core.policy_expiry_date;
+       Policyexp = Policyexp.split("-");
+           var polyexpdate = "";
+
+                polyexpdate = Policyexp[2] + '-' + Policyexp[1] + '-' + Policyexp[0];
+
+        document.getElementById('expDate').innerHTML = polyexpdate;
+
+
+
+
+        var HTML = "";
+        document.getElementById('divshow').innerHTML="";
+
+         if (response.Summary.Request_Core.vehicle_insurance_type == "renew")
+        {
+            document.getElementById('tblnew').style.display = 'none';
+            document.getElementById('tblrenew').style.display = '';
+        }
+        else
+        {
+         document.getElementById('instype').innerHTML = "";
+            document.getElementById('tblrenew').style.display = 'none';
+            document.getElementById('tblnew').style.display = '';
+              document.getElementById('lblPolRegDatenew').innerHTML = response.Summary.Request_Core.vehicle_registration_date;
+              document.getElementById('lblVehiclenew').innerHTML = otherDetails.CAR_NAME;
+               document.getElementById('lblccnew').innerHTML = otherDetails.CC;
+                var Policyreg = response.Summary.Request_Core.vehicle_registration_date;
+       Policyreg = Policyreg.split("-");
+           var Policyregdate = "";
+
+                Policyregdate = Policyreg[2] + '-' + Policyreg[1] + '-' + Policyreg[0];
+                 document.getElementById('lblPolRegDatenew').innerHTML = Policyregdate;
+        }
+
+        for (var i = 0; i < response.Response.length; i++) {
+            if (response.Response[i].Error_Code == "") {
+
+                HTML = HTML + ' <div class="col-md-12">';
+                HTML = HTML + ' <div class="table-responsive box-shadow">';
+
+                HTML = HTML + ' <table class="table table-bordered tbl2">';
+                HTML = HTML + '<tbody>';
+                HTML = HTML + '<tr>';
+                HTML = HTML + ' <td rowspan="2" class="img-pad" style="border-right:1px solid #ccc !important;width:120px;padding-top: 10px !important;"><img style="width:80%"   src="http://api.magicfinmart.com/InsurerImages/car_' + response.Response[i].Insurer_Id + '.png" class="" /></td>';
+                HTML = HTML + '<td style="text-align:left;">IDV</td>';
+                HTML = HTML + '<td class="red-txt">PREMIUM</td>';
+                HTML = HTML + '</tr>';
+                HTML = HTML + '<tr>';
+                HTML = HTML + ' <td style="text-align:left;"> ' + response.Response [i].LM_Custom_Request.vehicle_expected_idv + '</td>';
+                HTML = HTML + ' <td><span class="amount">₹ ' + Math.round(response.Response [i].Premium_Breakup.final_premium) + '</span></td>';
+                HTML = HTML + '</tr>';
+                HTML = HTML + '</tbody>';
+                HTML = HTML + '</table>';
+                HTML = HTML + '</div>';
+
+
+                HTML = HTML + ' <div class="col-md-12">';
+     if (Object.keys(response.Response[i].listAppliedAddons).length != 0) {
+                HTML = HTML + ' <div class="table-responsive box-shadow">';
+
+
+                    HTML = HTML + ' <table class="table table-bordered tbl2">';
+                    HTML = HTML + '<tbody>';
+                    HTML = HTML + '<tr>';
+                    HTML = HTML + ' <td rowspan="2" class="img-pad" style="border-right:1px solid #ccc !important;width:120px;padding-top: 10px !important;"><img style="width:80%"  src="http://api.magicfinmart.com/InsurerImages/car_' + response.Response[i].Insurer_Id + '.png" class="" /></td>';
+                    HTML = HTML + '<td style="text-align:left;">IDV</td>';
+                    HTML = HTML + '<td class="red-txt">PREMIIUM</td>';
+                    HTML = HTML + '</tr>';
+                    HTML = HTML + '<tr>';
+                    HTML = HTML + ' <td style="text-align:left;"> ' + response.Response [i].LM_Custom_Request.vehicle_expected_idv + '</td>';
+                    HTML = HTML + ' <td><a href="#" class="amount">₹ ' +  Math.round( response.Response[i].final_premium_with_addon) + '</a></td>';
+                    HTML = HTML + '</tr>';
+                    HTML = HTML + '</tbody>';
+                    HTML = HTML + '</table>';
+                    HTML = HTML + '<table class="table bg-gray text-center" >';
+                    HTML = HTML + '<tbody class="center-txt">';
+
+                    HTML = HTML + '<td class="no-padding">';
+                    HTML = HTML + '  <ul class="list1">';
+                    if (response.Response[i].Addon_List != null) {
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_zero_dep_cover') && response.Response[i].Addon_List.addon_zero_dep_cover != 0) {
+
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_zero_dep_cover +
+                                ' (' + response.Response [i].Addon_List.addon_zero_dep_cover + ')' + '</li>';
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_ambulance_charge_cover') && response.Response [i].Addon_List.addon_ambulance_charge_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_ambulance_charge_cover
+                                + ' (' + response.Response [i].Addon_List.addon_ambulance_charge_cover + ')' + '</li>';
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_consumable_cover') && response.Response[i].Addon_List.addon_consumable_cover !=  0) {
+
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_consumable_cover
+                                  + ' (' + response.Response [i].Addon_List.addon_consumable_cover + ')' + '</li>';
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_daily_allowance_cover') && response.Response [i].Addon_List.addon_daily_allowance_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_daily_allowance_cover
+                               + ' (' + response.Response [i].Addon_List.addon_daily_allowance_cover + ')' + '</li>';
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_engine_protector_cover') && response.Response [i].Addon_List.addon_engine_protector_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_engine_protector_cover
+                              + ' (' + response.Response [i].Addon_List.addon_engine_protector_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_hospital_cash_cover') && response.Response [i].Addon_List.addon_hospital_cash_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_hospital_cash_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_hospital_cash_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_inconvenience_allowance_cover') && response.Response [i].Addon_List.addon_inconvenience_allowance_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_inconvenience_allowance_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_inconvenience_allowance_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_hydrostatic_lock_cover') && response.Response [i].Addon_List.addon_hydrostatic_lock_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_hydrostatic_lock_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_hydrostatic_lock_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_inconvenience_allowance_cover') && response.Response [i].Addon_List.addon_inconvenience_allowance_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_inconvenience_allowance_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_inconvenience_allowance_cover + ')' + '</li>';
+
+                        }
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_invoice_price_cover') && response.Response [i].Addon_List.addon_invoice_price_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_invoice_price_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_invoice_price_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_losstime_protection_cover') && response.Response [i].Addon_List.addon_losstime_protection_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_losstime_protection_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_losstime_protection_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_key_lock_cover') && response.Response[i].Addon_List.addon_key_lock_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_key_lock_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_key_lock_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_medical_expense_cover') && response.Response [i].Addon_List.addon_medical_expense_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_medical_expense_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_medical_expense_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_ncb_protection_cover') && response.Response [i].Addon_List.addon_ncb_protection_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_ncb_protection_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_ncb_protection_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_passenger_assistance_cover') && response.Response [i].Addon_List.addon_passenger_assistance_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_passenger_assistance_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_passenger_assistance_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_personal_belonging_loss_cover') && response.Response [i].Addon_List.addon_personal_belonging_loss_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_personal_belonging_loss_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_personal_belonging_loss_cover + ')' + '</li>';
+
+                        }
+
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_road_assist_cover') && response.Response[i].Addon_List.addon_road_assist_cover  != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_road_assist_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_road_assist_cover + ')' + '</li>';
+
+                        }
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_rodent_bite_cover') && response.Response[i].Addon_List.addon_rodent_bite_cover  != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>  ' + addon_list.addon_rodent_bite_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_rodent_bite_cover + ')' + '</li>';
+
+                        }
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_tyre_coverage_cover') && response.Response [i].Addon_List.addon_tyre_coverage_cover != 0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> ' + addon_list.addon_tyre_coverage_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_tyre_coverage_cover + ')' + '</li>';
+
+                        }
+                        if (response.Response[i].Addon_List.hasOwnProperty ('addon_windshield_cover') && response.Response[i].Addon_List.addon_windshield_cover !=  0) {
+                            HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span>' + addon_list.addon_windshield_cover
+                                 + ' (' + response.Response [i].Addon_List.addon_windshield_cover + ')' + '</li>';
+
+                        }
+
+
+                        //HTML = HTML + ' <li><span class="glyphicon glyphicon-ok"></span> simply dummy text</li>';
+                    }
+                    HTML = HTML + '   </ul>';
+                    HTML = HTML + '</td>';
+                }
+
+                HTML = HTML + '</tbody>';
+                HTML = HTML + '</table>';
+                HTML = HTML + '</div>';
+      }
+
+              HTML = HTML + '</div>';
+              }
+
+      document.getElementById('divshow').innerHTML = HTML;
+      Android.processComplete();
+    }
+
+
+
+</script>
+</html>
+

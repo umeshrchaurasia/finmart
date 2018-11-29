@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvInputDetails"
+        style="@style/CardViewStyle"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/divider"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:id="@+id/llMembers"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="30"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="0dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="50"
+                android:gravity="center|center_vertical"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtCoverType"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textCover"
+                        style="@style/TextStyle.TextMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:text=""
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/txtCoverAmount"
+                        style="@style/TextStyle.TextMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAllCaps="true"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="20"
+                android:paddingLeft="28dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/edit_icon" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:id="@+id/card_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/cvInputDetails"-->
+    <!--android:layout_marginLeft="8dp"-->
+    <!--android:layout_marginRight="8dp"-->
+    <!--android:visibility="visible"-->
+    <!--app:cardCornerRadius="2dp">-->
+
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvInputDetails"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/tvCount"
+            style="@style/TextStyle.Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="75"
+            android:gravity="left"
+            android:paddingTop="0dp"
+            android:text="xxwwwx"
+            android:textColor="@color/lightBlue" />
+
+        <!--lightBlue  android:textColor="?attr/colorPrimaryDark" -->
+
+     <!--   <ImageView
+            android:id="@+id/ivHealthCompare"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_weight="10"
+            android:visibility="gone"
+            app:srcCompat="@drawable/compare" />
+
+        <TextView
+            android:id="@+id/txtCompareCount"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/compare_roundshape_gray"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone" />-->
+
+
+    </LinearLayout>
+    <!--</android.support.v7.widget.CardView>-->
+
+
+    <ImageView
+        android:id="@+id/webViewLoader"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/card_view"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvHealthQuote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/webViewLoader"
+        android:layout_marginTop="4dp" />
+
+    <!--
+        <ExpandableListView
+            android:id="@+id/elvHealthQuote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/webViewLoader"
+            android:layout_marginTop="4dp" />
+    -->
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="gone"
+        app:srcCompat="@drawable/vector_edit" />
+
+</RelativeLayout>

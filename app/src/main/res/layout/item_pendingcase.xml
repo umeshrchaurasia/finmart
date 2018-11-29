@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rljk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:id="@+id/txtCustName"
+                style="@style/TextStyle.TextLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@+id/ivMsg"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:lines="1"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="Loreum Ipsum"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:tint="@color/white"
+                android:id="@+id/ivDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/delete_ic"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivCall"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/ivDelete"
+                android:src="@drawable/call_ic"
+                android:tint="@color/white"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivMsg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ivCall"
+                android:src="@drawable/msg_ic"
+                android:tint="@color/white"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llksa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rljk"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/imgInsurerLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/finmart_logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textAllCaps="true"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtCategory"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App status"
+                    android:textAllCaps="true"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:id="@+id/imgStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/llksa"
+            android:layerType="software"
+            android:src="@drawable/dash_line" />
+
+        <LinearLayout
+            android:id="@+id/akjsh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llksa"
+            android:paddingTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtHistory"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="0dp"
+                    android:gravity="center"
+                    android:text="Lead History"
+                    android:textAllCaps="true"
+                    android:textSize="11sp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circular_shape"
+                    android:padding="3dp"
+                    android:src="@drawable/history_lead_ic" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llType"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Type"
+                    android:textAllCaps="true"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circular_shape"
+                    android:gravity="center"
+                    android:text="Q"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/txtquickType"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rectshape_pending"
+                    android:gravity="center"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Pending days"
+                    android:textAllCaps="true"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtPendingDays"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/circular_shape"
+                    android:gravity="center"
+                    android:text="30"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/txtKnowMore"
+                    style="@style/TextStyle.TextMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:text="Info"
+                    android:textAllCaps="true"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/info_ic"
+                   />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view2"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtOverflowMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+            <!--   <TextView
+                   style="@style/TextViewStyle.Small"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:drawablePadding="0dp"
+                   android:drawableTop="@drawable/vector_email"
+                   android:gravity="center"
+                   android:text="Message" />
+
+               <View
+                   android:visibility="gone"
+                   android:layout_width="0.5dp"
+                   android:layout_height="match_parent"
+                   android:background="@color/search_gray" />
+
+               <TextView
+                   android:id="@+id/txtOverflowMenu"
+                   style="@style/TextViewStyle.Small"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:drawablePadding="0dp"
+                   android:drawableTop="@android:drawable/sym_call_outgoing"
+                   android:gravity="center"
+                   android:text="Call" />
+
+               <View
+                   android:visibility="gone"
+                   android:layout_width="0.5dp"
+                   android:layout_height="match_parent"
+                   android:background="@color/search_gray" />
+
+               <TextView
+                   style="@style/TextViewStyle.Small"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:drawablePadding="0dp"
+                   android:drawableTop="@drawable/ic_action_delete"
+                   android:gravity="center"
+                   android:text="Delete" />-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/vector_email" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@android:drawable/sym_call_outgoing" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_delete" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

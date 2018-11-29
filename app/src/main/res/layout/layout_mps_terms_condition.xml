@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextStyle.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_color"
+        android:gravity="center_vertical|left"
+        android:minHeight="42dp"
+        android:padding="8dp"
+        android:text="Terms and conditions for mps subscription"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <WebView
+        android:id="@+id/wvTerms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

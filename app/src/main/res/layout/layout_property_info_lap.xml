@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/lightGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgProperty1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rbimgMale"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RadioButton
+                android:id="@+id/rbReady"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="29"
+                android:checked="true"
+                style="@style/TextViewStyle.Medium"
+                android:text="READY" />
+
+            <RadioButton
+                android:id="@+id/rbUnder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="36"
+                style="@style/TextViewStyle.Medium"
+                android:text="UNDER CONS" />
+
+            <RadioButton
+                android:id="@+id/rbSearching"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                style="@style/TextViewStyle.Medium"
+                android:text="SEARCHING" />
+
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgProperty2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/rbimgMale"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RadioButton
+                android:id="@+id/rbResale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="29"
+                style="@style/TextViewStyle.Medium"
+                android:text="RESALE" />
+
+            <RadioButton
+                android:id="@+id/rbForcons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="36"
+                style="@style/TextViewStyle.Medium"
+                android:text="FOR CONS" />
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="35"
+                style="@style/TextViewStyle.Medium"
+                android:text="OTHER" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/lightGrey" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:hint="Property Cost">
+
+
+
+            <EditText
+                android:id="@+id/etCostOfProp"
+                style="@style/Style.edittext"
+                android:digits="0123456789"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hint="Loan Required">
+
+            <EditText
+                android:id="@+id/txtMaxLoanAmntAllow"
+                style="@style/Style.edittext"
+                android:digits="0123456789"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hint="Select City">
+
+            <AutoCompleteTextView
+
+                android:id="@+id/acCity"
+                android:maxLines="1"
+                style="@style/Style.edittext"
+                android:dropDownWidth="250dp"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextAppearence.App.TextInputLayout"
+            android:layout_width="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:hint="Mobile Number">
+
+            <EditText
+                android:id="@+id/etContact"
+                style="@style/Style.edittext"
+                android:digits="0123456789"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="10"/>
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="10dp">
+
+
+
+        <TextView
+            android:id="@+id/txtApplicantDetail"
+            style="@style/TextViewStyle.Large"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text=" LOAN TENURE"
+            android:background="@color/white"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/txtDispalayMinTenureYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="5 Yr"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+            <TextView
+                android:id="@+id/txtDispalayMaxTenureYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="15 Yr"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <TextView
+                android:id="@+id/etTenureInYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:background="@drawable/blue_background"
+                android:text="5"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+
+        </RelativeLayout>
+
+        <!--<com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar-->
+        <!--android:id="@+id/sbTenure"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:bar_color="#F7BB88"-->
+        <!--app:bar_highlight_color="#E07416"-->
+        <!--app:left_thumb_color="#E07416"-->
+        <!--app:left_thumb_color_pressed="#99633A"-->
+        <!--app:max_value="30"-->
+        <!--app:min_value="1"-->
+        <!--app:steps="1" />-->
+
+        <SeekBar
+            android:id="@+id/sbTenure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:max="10"
+            android:progress="1"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:splitTrack="false"
+            android:maxHeight="8dp"
+            android:minHeight="8dp"
+            android:thumb="@drawable/custom_thumb" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

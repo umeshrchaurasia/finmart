@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/splash_bg"
+    tools:context="com.datacomp.magicfinmart.splashscreen.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="122dp"
+        android:src="@drawable/finmart_logo" />
+
+    <TextView
+        style="@style/TextViewStyle.Large"
+        android:layout_below="@+id/imageView3"
+        android:gravity="center"
+        android:text="ONE STOP FINANCIAL SOLUTION"
+        android:textColor="@color/header_dark_text" />
+
+</RelativeLayout>

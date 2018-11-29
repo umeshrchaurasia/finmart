@@ -1,0 +1,81 @@
+apply plugin: 'com.android.library'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'www.datacompwebtech.com'
+            keyPassword 'dwtandkey'
+            storeFile file('www.datacompwebtech.com.keystore')
+            storePassword 'dwtandkey'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 31
+        versionName "2.1.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            debuggable true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "FINMART_URL", '"http://api.magicfinmart.com"'
+            buildConfigField "String", "HEALTH_CHECKUP_URL", '"http://www.healthassure.in"'
+            buildConfigField "String", "INSPECTION_URL", '"http://inspection.policyboss.com"'
+            buildConfigField "String", "ERP_URL", '"http://services.rupeeboss.com/LoginDtls.svc/"'
+            buildConfigField "String", "LOAN_URL", '"http://www.rupeeboss.com"'
+            buildConfigField "String", "NODE_URL", '"http://horizon.policyboss.com:5000"'
+            buildConfigField "String", "PROPOSAL_BASE_URL", '"https://www.policyboss.com/"'
+            buildConfigField "String", "POSP_URL", '"http://edu.policyboss.com"'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            buildConfigField "String", "FINMART_URL", '"http://qa.mgfm.in"'
+            buildConfigField "String", "HEALTH_CHECKUP_URL", '"http://www.healthassure.in"'
+            buildConfigField "String", "INSPECTION_URL", '"http://inspection.policyboss.com"'
+            buildConfigField "String", "ERP_URL", '"http://services.rupeeboss.com/LoginDtls.svc/"'
+            buildConfigField "String", "LOAN_URL", '"http://www.rupeeboss.com"'
+            buildConfigField "String", "NODE_URL", '"http://horizon.policyboss.com:5000"'
+            buildConfigField "String", "PROPOSAL_BASE_URL", '"https://www.policyboss.com/"'
+            buildConfigField "String", "POSP_URL", '"http://edu.policyboss.com"'
+
+        }
+        uat {
+            debuggable true
+            buildConfigField "String", "FINMART_URL", '"http://preprodapiqa.mgfm.in"'
+            buildConfigField "String", "HEALTH_CHECKUP_URL", '"http://www.healthassure.in"'
+            buildConfigField "String", "INSPECTION_URL", '"http://inspection.policyboss.com"'
+            buildConfigField "String", "ERP_URL", '"http://services.rupeeboss.com/LoginDtls.svc/"'
+            buildConfigField "String", "LOAN_URL", '"http://www.rupeeboss.com"'
+            buildConfigField "String", "NODE_URL", '"http://horizon.policyboss.com:5000"'
+            buildConfigField "String", "PROPOSAL_BASE_URL", '"https://www.policyboss.com/"'
+            buildConfigField "String", "POSP_URL", '"http://edu.policyboss.com"'
+            signingConfig signingConfigs.debug
+
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    compile 'com.itextpdf:itextg:5.5.9'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.google.code.gson:gson:2.6.1'
+    implementation 'com.squareup.okhttp:okhttp:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+//    compile 'com.google.firebase:firebase-core:10.0.1'
+//    compile 'com.google.firebase:firebase-messaging:10.0.1'
+//    implementation 'com.android.support:appcompat-v7:26.1.0'
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+apply plugin: 'realm-android'

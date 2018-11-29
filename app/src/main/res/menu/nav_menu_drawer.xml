@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/dashboard_menu_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:orderInCategory="100"
+            android:title="HOME" />
+
+
+        <item
+            android:id="@+id/nav_myaccount_pro"
+            android:orderInCategory="200"
+            android:icon="@drawable/my_account"
+            android:title="MY ACCOUNT">
+            <menu>
+                <item
+                    android:id="@+id/nav_myaccount"
+                    android:icon="@drawable/vector_person"
+                    android:title="Profile" />
+                <item
+                    android:id="@+id/nav_changepassword"
+                    android:icon="@drawable/change_password"
+                    android:orderInCategory="800"
+                    android:title="Change Password" />
+                <item
+                    android:id="@+id/nav_franchise"
+                    android:icon="@drawable/agreemnet"
+                    android:orderInCategory="1100"
+                    android:title="Loan Agreement"
+                    android:visible="true" />
+
+            </menu>
+        </item>
+
+
+        <item
+            android:id="@+id/nav_TRANSACTIONS"
+            android:orderInCategory="300"
+            android:icon="@drawable/my_account"
+            android:title="TRANSACTIONS">
+            <menu>
+            <item
+                android:id="@+id/nav_transactionhistory"
+                android:icon="@drawable/vector_date"
+                android:orderInCategory="330"
+                android:title="Transaction History"
+                android:visible="true" />
+
+            <item
+                android:id="@+id/nav_MessageCentre"
+                android:icon="@drawable/sms"
+                android:orderInCategory="350"
+                android:title="Message Centre"
+                android:visible="true" />
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_EarningTools"
+            android:orderInCategory="400"
+            android:icon="@drawable/my_account"
+            android:title="EARNING TOOLS">
+            <menu>
+            <item
+                android:id="@+id/nav_mps"
+                android:icon="@drawable/mps"
+                android:orderInCategory="430"
+                android:title="MPS" />
+            <item
+                android:id="@+id/nav_IncomeCalculator"
+                android:icon="@drawable/income_calculator_ic"
+                android:orderInCategory="450"
+                android:title="Income Calculator"
+                android:visible="true" />
+
+
+            <item
+                android:id="@+id/nav_IncomePotential"
+                android:icon="@drawable/income_potential_ic"
+                android:orderInCategory="480"
+                android:title="Income Potential"
+                android:visible="true" />
+
+            </menu>
+
+        </item>
+
+        <item
+            android:id="@+id/nav_LEADS"
+            android:orderInCategory="500"
+            android:icon="@drawable/my_account"
+            android:title="LEADS">
+            <menu>
+            <item
+                android:id="@+id/nav_generateLead"
+                android:icon="@drawable/vehicledetail"
+                android:orderInCategory="530"
+                android:title="Motor Insurance" />
+
+            <item
+                android:id="@+id/nav_scan_vehicle"
+                android:icon="@drawable/camera_search_ic"
+                android:orderInCategory="550"
+                android:visible="false"
+                android:title="Scan Vehicle" />
+
+            <item
+                android:id="@+id/nav_sharedata"
+                android:icon="@drawable/share_data"
+                android:orderInCategory="570"
+                android:title="Loans (Share Data)"
+               />
+
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/sync_contact_ic"
+                android:orderInCategory="590"
+                android:title="Sync Contacts"
+                android:visible="true" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_POSP"
+            android:orderInCategory="600"
+            android:icon="@drawable/my_account"
+            android:title="POSP">
+<menu>
+            <item
+                android:id="@+id/nav_pospenrollment"
+                android:icon="@drawable/posp_enrollment"
+                android:orderInCategory="630"
+                android:title="Enrol as POSP" />
+
+            <item
+                android:id="@+id/nav_addposp"
+                android:icon="@drawable/posp_enrollment"
+                android:orderInCategory="650"
+                android:title="Add Users"
+                />
+
+</menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_REQUEST"
+            android:orderInCategory="700"
+            android:icon="@drawable/my_account"
+            android:title="REQUEST">
+            <menu>
+            <item
+
+                android:id="@+id/nav_offlineQuotes"
+                android:icon="@drawable/offiline_quote_ic"
+                android:orderInCategory="730"
+                android:title="Offline Quotes"
+                android:visible="true" />
+
+            <item
+                android:id="@+id/nav_crnpolicy"
+                android:icon="@drawable/insurance_policy_ic"
+                android:orderInCategory="750"
+                android:title="Request Policy by CRN"
+                android:visible="true" />
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_REQUEST1"
+            android:orderInCategory="710"
+            android:icon="@drawable/my_account"
+            android:title="OTHER UTILITIES">
+    <menu>
+        <item
+            android:id="@+id/nav_whatsnew"
+            android:icon="@drawable/whats_new"
+            android:orderInCategory="900"
+            android:title="WHAT'S NEW" />
+        <item
+            android:id="@+id/nav_helpfeedback"
+            android:icon="@drawable/help"
+            android:orderInCategory="1000"
+            android:title="HELP &amp; FEEDBACK" />
+
+        <item
+            android:id="@+id/nav_myBusiness"
+            android:icon="@drawable/business_ic"
+            android:title="MY BUSINESS"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_referFriend"
+            android:icon="@drawable/refer_ic"
+            android:title="REFER A FRIEND"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_vehicleinfo"
+            android:icon="@drawable/vehicledetail"
+            android:title="VEHICLE DETAIL"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_expressLoan"
+            android:icon="@drawable/express_loan"
+
+            android:title="EXPRESS LOAN"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_yesbankbot"
+            android:icon="@drawable/yesbank"
+            android:title="YES BANK BOT"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_posptraining"
+            android:icon="@drawable/posp_training"
+            android:title="POSP TRAINING"
+            android:visible="false" />
+        <item
+            android:icon="@drawable/inspection"
+            android:title="INSPECTION"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/nav_homeloanApplication"
+            android:icon="@drawable/logout"
+            android:title="Home Loan Apply"
+            android:visible="false" />
+
+    </menu>
+        </item>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:orderInCategory="10000"
+            android:title="LOG-OUT" />
+
+
+
+    </group>
+
+
+</menu>

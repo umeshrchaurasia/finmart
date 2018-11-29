@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\Rajeev\AndroidProjects\FM-ANDROID-NEW\FM-ANDROID.iml" filepath="D:\Rajeev\AndroidProjects\FM-ANDROID-NEW\FM-ANDROID.iml" />
+      <module fileurl="file://D:\MaginFinmart\FM-ANDROID.iml" filepath="D:\MaginFinmart\FM-ANDROID.iml" />
+      <module fileurl="file://D:\Rajeev\AndroidProjects\FM-ANDROID-THEME\FM-ANDROID-NEW.iml" filepath="D:\Rajeev\AndroidProjects\FM-ANDROID-THEME\FM-ANDROID-NEW.iml" />
+      <module fileurl="file://C:\Umesh\FM-ANDROID\FM-ANDROID-NEW.iml" filepath="C:\Umesh\FM-ANDROID\FM-ANDROID-NEW.iml" />
+      <module fileurl="file://D:\FinmartProject\FM-ANDROID\FM-ANDROID-NEW.iml" filepath="D:\FinmartProject\FM-ANDROID\FM-ANDROID-NEW.iml" />
+      <module fileurl="file://D:\MaginFinmart\FM-ANDROID-NEW.iml" filepath="D:\MaginFinmart\FM-ANDROID-NEW.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FM-ANDROID-THEME.iml" filepath="$PROJECT_DIR$/FM-ANDROID-THEME.iml" />
+      <module fileurl="file://D:\Project_Company\FM-ANDROID\MaginFinmart.iml" filepath="D:\Project_Company\FM-ANDROID\MaginFinmart.iml" />
+      <module fileurl="file://D:\Rajeev\AndroidProjects\FM-ANDROID-NEW\MaginFinmart.iml" filepath="D:\Rajeev\AndroidProjects\FM-ANDROID-NEW\MaginFinmart.iml" />
+      <module fileurl="file://D:\FinmartProject\FM-ANDROID\MaginFinmart.iml" filepath="D:\FinmartProject\FM-ANDROID\MaginFinmart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/finmartserviceapi/finmartserviceapi.iml" filepath="$PROJECT_DIR$/finmartserviceapi/finmartserviceapi.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/filter">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvInputDetails"
+                style="@style/CardViewStyle"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="100">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_weight="80"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/TextViewStyle.Medium"
+                                    android:gravity="center"
+                                    android:text="sum insured"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/header_text_color"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvSum"
+                                    style="@style/TextViewStyle.Medium"
+                                    android:gravity="center"
+                                    android:textAllCaps="true" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tvGender"
+                                    style="@style/TextViewStyle.Medium"
+                                    android:gravity="center"
+                                    android:text="female"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/header_text_color"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvSmoker"
+                                    style="@style/TextViewStyle.Medium"
+                                    android:gravity="center"
+                                    android:text="SMOKER"
+                                    android:textAllCaps="true"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:id="@+id/ivEdit"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="20"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/edit_icon" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@color/divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:weightSum="3">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextViewStyle.Medium"
+                                android:gravity="center"
+                                android:text="DOB"
+                                android:textAllCaps="true"
+                                android:textColor="@color/header_text_color"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvAge"
+                                style="@style/TextViewStyle.Medium"
+                                android:gravity="center"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextViewStyle.Medium"
+                                android:gravity="center"
+                                android:text="term"
+                                android:textAllCaps="true"
+                                android:textColor="@color/header_text_color"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvPolicyTerm"
+                                style="@style/TextViewStyle.Medium"
+                                android:gravity="center"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextViewStyle.Medium"
+                                android:gravity="center"
+                                android:text="crn number"
+                                android:textAllCaps="true"
+                                android:textColor="@color/header_text_color"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/tvCrn"
+                                style="@style/TextViewStyle.Medium"
+                                android:gravity="center"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cvInputDetails"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="90"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvCount"
+                            style="@style/TextViewStyle.Small"
+                            android:layout_width="wrap_content"
+                            android:paddingTop="3dp"
+                            android:text="results from www.policyboss.com"
+                            android:textAllCaps="true"
+                            android:textColor="?attr/colorPrimaryDark" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="8dp">
+
+
+                            <TextView
+                                android:id="@+id/tvWithoutAddon"
+                                style="@style/TextViewStyle.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:text="WIthout Addon"
+                                android:textAllCaps="true" />
+
+                            <Switch
+                                android:id="@+id/swAddon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:textAllCaps="true"
+                                android:textColor="@color/secondary_text_color" />
+
+                            <TextView
+                                android:id="@+id/tvWithAddon"
+                                style="@style/TextViewStyle.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_marginRight="8dp"
+                                android:text="WIth Addon"
+                                android:textAllCaps="true" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/ivShare"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="10"
+                        android:padding="3dp"
+                        android:src="@drawable/share_icon_white" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvTerm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/filter"
+                android:layout_below="@+id/webViewLoader"
+                android:layout_marginTop="4dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="gone"
+        app:srcCompat="@drawable/vector_edit" />
+
+    <TextView
+        android:id="@+id/filter"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="BACK TO INPUT" />
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.datacomp.magicfinmart.helpfeedback.raiseticket.AddTicketActivity"
+    tools:showIn="@layout/activity_add_ticket">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/TextStyle.TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORIES"
+            android:textColor="@color/blue" />
+
+        <Spinner
+            android:id="@+id/spCategory"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+
+        <TextView
+            style="@style/TextStyle.TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUB CATEGORIES"
+            android:textColor="@color/blue" />
+
+        <Spinner
+            android:id="@+id/spSubCategories"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false" />
+
+
+        <TextView
+            style="@style/TextStyle.TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLASSIFICATIONS"
+            android:textColor="@color/blue" />
+
+
+        <Spinner
+            android:id="@+id/spClassification"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/TextStyle.TextMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="DOCUMENT UPLOAD" />
+
+            <TextView
+                android:id="@+id/tvBrowse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/customeborder_blue"
+                android:drawableLeft="@drawable/folder_icon"
+                android:padding="8dp"
+                android:text="BROWSE"
+                android:textColor="@color/blue" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/etFileNAme"
+            style="@style/TextStyle.TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="No files attached"
+            android:textColor="@color/blue" />
+
+        <TextView
+            style="@style/TextStyle.TextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:text="MESSAGE"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            style="@style/TextStyle.TextMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter message"
+            android:minLines="4"
+            android:textColor="@color/blue" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SUBMIT"
+            android:visibility="visible" />
+    </LinearLayout>
+</ScrollView>
